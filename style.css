@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0 20px;
   background: #f8f8f8;
+  color: #333;
 }
 
 header, section, footer {
@@ -14,13 +15,20 @@ header, section, footer {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h1, h2 {
-  color: #333;
+h1 {
+  color: #222;
 }
+
+h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
 a {
   color: #0070f3;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
