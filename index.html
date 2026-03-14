@@ -1,171 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Jayavardhan Premnath | Data Engineer</title>
-
-<link rel="stylesheet" href="css/style.css">
-
-</head>
-
-<body>
-
-<header>
-
-<nav class="navbar">
-
-<h1 class="logo">Jayavardhan</h1>
-
-<ul class="nav-links">
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-</nav>
-
-</header>
-
-
-<section class="hero">
-
-<h2>Hi, I'm Jayavardhan Premnath</h2>
-
-<p>Data Engineer | Data Analyst | Python | SQL | AWS</p>
-
-<div class="buttons">
-
-<a href="resume/Jayavardhan-Premnath-Resume.pdf" class="btn">Download Resume</a>
-
-<a href="#projects" class="btn secondary">View Projects</a>
-
-</div>
-
-</section>
-
-
-<section id="about" class="section">
-
-<h2>About Me</h2>
-
-<p>
-Data Engineer with experience building scalable data pipelines and analytics dashboards.
-Previously worked at Reach building data solutions and dashboards used for business insights.
-Currently completing a Master's in Data Analytics at Dublin Business School (2026).
-</p>
-
-</section>
-
-
-<section id="skills" class="section">
-
-<h2>Skills</h2>
-
-<div class="skills">
-
-<span>Python</span>
-<span>SQL</span>
-<span>AWS</span>
-<span>Power BI</span>
-<span>Tableau</span>
-<span>Pandas</span>
-<span>Machine Learning</span>
-
-</div>
-
-</section>
-
-
-<section id="projects" class="section">
-
-<h2>Projects</h2>
-
-<div class="projects">
-
-
-<div class="project-card">
-
-<h3>Bank Marketing Prediction Model</h3>
-
-<p>Machine learning model predicting customer subscription using classification algorithms.</p>
-
-<a href="https://github.com/jayavardhan22" target="_blank">View Code</a>
-
-</div>
-
-
-<div class="project-card">
-
-<h3>Operations Dashboard</h3>
-
-<p>Interactive analytics dashboard built using Power BI for operational insights.</p>
-
-<a href="https://github.com/jayavardhan22" target="_blank">View Project</a>
-
-</div>
-
-
-<div class="project-card">
-
-<h3>Data Pipeline Automation</h3>
-
-<p>Automated ETL pipeline extracting and processing large datasets.</p>
-
-<a href="https://github.com/jayavardhan22" target="_blank">View Code</a>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-<section id="contact" class="section">
-
-<h2>Contact</h2>
-
-<p>Email: jayavardhanp2204@gmail.com</p>
-
-<p>Phone (Ireland): +353 0892484461</p>
-
-<p>Phone (India): +91 7406165884</p>
-
-<p>
-LinkedIn: 
-<a href="https://www.linkedin.com/in/jayavardhan-premnath-a7293b237/" target="_blank">
-Profile
-</a>
-</p>
-
-<p>
-GitHub: 
-<a href="https://github.com/jayavardhan22" target="_blank">
-jayavardhan22
-</a>
-</p>
-
-<p>
-Instagram: 
-<a href="https://instagram.com/jayavardhan__p" target="_blank">
-@jayavardhan__p
-</a>
-</p>
-
-</section>
-
-
-<footer>
-
-<p>© 2026 Jayavardhan Premnath</p>
-
-</footer>
-
-<script src="js/script.js"></script>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jayavardhan Premnath | Data Engineer</title>
+
+    <!-- CSS is inside /css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar" aria-label="Primary">
+      <div class="logo">Jayavardhan</div>
+
+      <ul class="nav-links">
+        <li><button type="button" class="nav-btn" data-page="0">About</button></li>
+        <li><button type="button" class="nav-btn" data-page="1">Experience</button></li>
+        <li><button type="button" class="nav-btn" data-page="2">Projects</button></li>
+        <li><button type="button" class="nav-btn" data-page="3">Contact</button></li>
+      </ul>
+
+      <a
+        href="assets/Jayavardhan_Resume.pdf"
+        class="resume-btn"
+        aria-label="Download Resume"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Resume
+      </a>
+    </nav>
+
+    <!-- PAGE WRAPPER -->
+    <main class="page-wrapper">
+      <!-- PAGE 1: ABOUT -->
+      <section class="page active" id="page1" aria-label="About">
+        <div class="about-screen">
+          <div class="about-left">
+            <h1>Jayavardhan Premnath</h1>
+            <h3>Data Engineer</h3>
+            <p>
+              Data Engineer experienced in building scalable data pipelines and analytics systems.
+              Specialized in transforming raw data into meaningful insights using cloud platforms,
+              ETL pipelines, and business intelligence tools.
+            </p>
+
+            <div class="skills-tags" aria-label="Skills">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>AWS</span>
+              <span>BigQuery</span>
+              <span>Power BI</span>
+              <span>Qlik Sense</span>
+            </div>
+          </div>
+
+          <div class="about-right">
+            <div class="about-image">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-image"
+                alt="Profile image of Jayavardhan Premnath"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="education-card">
+              <h4>MSc Data Analytics</h4>
+              <span>Dublin Business School</span>
+              <p>2024 – 2025</p>
+            </div>
+
+            <div class="education-card">
+              <h4>Bachelor of Computer Applications</h4>
+              <span>MS Ramaiah College</span>
+              <p>2019 – 2022</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 2: EXPERIENCE -->
+      <section class="page" id="page2" aria-label="Experience">
+        <div class="section">
+          <h2>Experience</h2>
+
+          <div class="experience-card">
+            <button
+              type="button"
+              class="experience-header"
+              id="experienceToggle"
+              aria-controls="experienceContent"
+              aria-expanded="false"
+            >
+              <h3>Reach — Data Engineer</h3>
+              <span class="expand-icon" aria-hidden="true">+</span>
+            </button>
+
+            <div class="experience-content" id="experienceContent" role="region" aria-labelledby="experienceToggle">
+              <p>Bangalore, India | 2022 – 2024</p>
+              <ul>
+                <li>Started as Data Engineering Intern and transitioned to Engineer 1.</li>
+                <li>Built scalable ETL pipelines using Python and AWS Lambda.</li>
+                <li>Processed millions of records for analytics and reporting.</li>
+                <li>Developed dashboards using Power BI and Qlik Sense.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- DATA PIPELINE -->
+          <h2 class="section-title">Data Engineering Workflow</h2>
+          <div class="pipeline-flow" aria-label="Data engineering workflow">
+            <div class="pipeline-node">BigQuery</div>
+            <div class="pipeline-node">HubSpot</div>
+            <div class="pipeline-node">DynamoDB</div>
+            <div class="pipeline-arrow" aria-hidden="true">→</div>
+            <div class="pipeline-node">AWS Lambda (Python)</div>
+            <div class="pipeline-arrow" aria-hidden="true">→</div>
+            <div class="pipeline-node">S3 Bucket</div>
+            <div class="pipeline-arrow" aria-hidden="true">→</div>
+            <div class="pipeline-node">Power BI</div>
+            <div class="pipeline-node">Qlik Sense</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 3: PROJECTS -->
+      <section class="page" id="page3" aria-label="Projects">
+        <div class="section">
+          <h2>Projects</h2>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <h3>Airline Analytics Dashboard</h3>
+              <p>Interactive Power BI dashboard analyzing airline operational performance.</p>
+            </div>
+
+            <div class="project-card">
+              <h3>Bank Marketing ML Model</h3>
+              <p>Machine learning classification model predicting customer subscription behavior.</p>
+            </div>
+
+            <div class="project-card">
+              <h3>Traffic Data Quality ML</h3>
+              <p>Research project focused on improving large-scale system data quality.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 4: CONTACT -->
+      <section class="page" id="page4" aria-label="Contact">
+        <div class="section">
+          <h2>Contact</h2>
+          <p>Email: jayavardhanp2204@gmail.com</p>
+          <p>Phone: +353 0892484461</p>
+          <p>
+            LinkedIn:
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">View Profile</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- NAVIGATION ARROWS -->
+    <div class="nav-arrows" aria-label="Page navigation arrows">
+      <button type="button" class="arrow" id="prevBtn" aria-label="Previous Page">❮</button>
+      <button type="button" class="arrow" id="nextBtn" aria-label="Next Page">❯</button>
+    </div>
+
+    <!-- PAGE INDICATORS -->
+    <div class="page-indicator" aria-label="Page indicators">
+      <button type="button" class="dot-page active" data-page="0" aria-label="Page 1"></button>
+      <button type="button" class="dot-page" data-page="1" aria-label="Page 2"></button>
+      <button type="button" class="dot-page" data-page="2" aria-label="Page 3"></button>
+      <button type="button" class="dot-page" data-page="3" aria-label="Page 4"></button>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let currentPage = 0;
+
+        const pages = Array.from(document.querySelectorAll(".page"));
+        const dots = Array.from(document.querySelectorAll(".dot-page"));
+        const navButtons = Array.from(document.querySelectorAll(".nav-btn"));
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        const showPage = (index) => {
+          if (index < 0 || index >= pages.length) return;
+
+          pages.forEach((page) => page.classList.remove("active"));
+          dots.forEach((dot) => dot.classList.remove("active"));
+
+          pages[index].classList.add("active");
+          dots[index].classList.add("active");
+          currentPage = index;
+        };
+
+        navButtons.forEach((btn) => {
+          btn.addEventListener("click", () => showPage(Number(btn.dataset.page)));
+        });
+
+        dots.forEach((dot) => {
+          dot.addEventListener("click", () => showPage(Number(dot.dataset.page)));
+        });
+
+        nextBtn.addEventListener("click", () => {
+          if (currentPage < pages.length - 1) showPage(currentPage + 1);
+        });
+
+        prevBtn.addEventListener("click", () => {
+          if (currentPage > 0) showPage(currentPage - 1);
+        });
+
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowRight") nextBtn.click();
+          if (e.key === "ArrowLeft") prevBtn.click();
+        });
+
+        const experienceToggle = document.getElementById("experienceToggle");
+        const experienceContent = document.getElementById("experienceContent");
+        const expandIcon = experienceToggle?.querySelector(".expand-icon");
+
+        const toggleExperience = () => {
+          experienceContent.classList.toggle("show");
+          const isOpen = experienceContent.classList.contains("show");
+          experienceToggle.setAttribute("aria-expanded", String(isOpen));
+          if (expandIcon) expandIcon.textContent = isOpen ? "−" : "+";
+        };
+
+        experienceToggle?.addEventListener("click", toggleExperience);
+      });
+    </script>
+  </body>
 </html>
