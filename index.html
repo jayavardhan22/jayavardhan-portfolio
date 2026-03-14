@@ -1,334 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Jayavardhan Premnath Portfolio</title>
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- custom css link -->
-  <link rel="stylesheet" href="style.css">
+<title>Jayavardhan Premnath | Data Engineer</title>
 
-  <!-- google font link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-  <main>
+<header>
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar" data-sidebar>
+<nav class="navbar">
 
-      <div class="sidebar-info">
+<h1 class="logo">Jayavardhan</h1>
 
-        <figure class="avatar-box">
-          <img src="my-avatar.png" alt="Jayavardhan Premnath" width="80">
-        </figure>
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
-        <div class="info-content">
-          <h1 class="name" title="Jayavardhan Premnath">Jayavardhan Premnath</h1>
-          <p class="title">Data Engineer & Analyst | Data & Analytics Enthusiast</p>
-        </div>
+</nav>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+</header>
 
-      </div>
 
-      <div class="sidebar-info_more">
+<section class="hero">
 
-        <div class="separator"></div>
+<h2>Hi, I'm Jayavardhan Premnath</h2>
 
-        <ul class="contacts-list">
+<p>Data Engineer | Data Analyst | Python | SQL | AWS</p>
 
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:jayavardhanp2204@gmail.com" class="contact-link">jayavardhanp2204@gmail.com</a>
-            </div>
-          </li>
+<div class="buttons">
 
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Phone (Ireland)</p>
-              <a href="tel:+3530892484461" class="contact-link">+353 0892484461</a>
-              <p class="contact-title">Phone (India)</p>
-              <a href="tel:+917406165884" class="contact-link">+91 7406165884</a>
-            </div>
-          </li>
+<a href="resume/Jayavardhan-Premnath-Resume.pdf" class="btn">Download Resume</a>
 
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-              <time datetime="2001-04-22">April 22, 2001</time>
-            </div>
-          </li>
+<a href="#projects" class="btn secondary">View Projects</a>
 
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Dublin, Ireland</address>
-            </div>
-          </li>
+</div>
 
-        </ul>
+</section>
 
-        <div class="separator"></div>
 
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/jayavardhan-premnath-a7293b237/" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
+<section id="about" class="section">
 
-          <li class="social-item">
-            <a href="https://github.com/jayavardhan22" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
+<h2>About Me</h2>
 
-          <li class="social-item">
-            <a href="https://www.instagram.com/jayavardhan__p" class="social-link" target="_blank">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
+<p>
+Data Engineer with experience building scalable data pipelines and analytics dashboards.
+Previously worked at Reach building data solutions and dashboards used for business insights.
+Currently completing a Master's in Data Analytics at Dublin Business School (2026).
+</p>
 
-        </ul>
+</section>
 
-      </div>
 
-    </aside>
+<section id="skills" class="section">
 
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
+<h2>Skills</h2>
 
-      <!-- NAVBAR -->
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
-        </ul>
-      </nav>
+<div class="skills">
 
-      <!-- ABOUT -->
-      <article class="about active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+<span>Python</span>
+<span>SQL</span>
+<span>AWS</span>
+<span>Power BI</span>
+<span>Tableau</span>
+<span>Pandas</span>
+<span>Machine Learning</span>
 
-        <section class="about-text">
-          <p>
-            Data Engineer and Analyst based in Dublin, Ireland, with experience building robust data pipelines and dashboards
-            for SaaS platforms. Passionate about turning data into actionable insights and creating solutions using Python,
-            SQL, Power BI, Tableau, and AWS.
-          </p>
+</div>
 
-          <p>
-            Experience spans multiple industries including technology and analytics. Skilled in both backend data engineering
-            and frontend reporting, with a strong focus on accuracy, usability, and visualization.
-          </p>
-        </section>
+</section>
 
-        <section class="service">
-          <h3 class="h3 service-title">What I'm Doing</h3>
-          <ul class="service-list">
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="icon-dev.svg" alt="data engineering icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Engineering</h4>
-                <p class="service-item-text">Building and maintaining data pipelines and ETL processes on cloud platforms.</p>
-              </div>
-            </li>
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="icon-app.svg" alt="data analysis icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Analysis & Dashboarding</h4>
-                <p class="service-item-text">Creating interactive dashboards and analytics reports using Power BI and Tableau.</p>
-              </div>
-            </li>
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="icon-photo.svg" alt="python icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Python & SQL</h4>
-                <p class="service-item-text">Developing scripts for data cleaning, transformation, and analysis using Python and SQL.</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </article>
 
-      <!-- RESUME -->
-      <article class="resume" data-page="resume">
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+<section id="projects" class="section">
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Education</h3>
-          </div>
+<h2>Projects</h2>
 
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Master of Science in Data Processing - Dublin Business School</h4>
-              <span>Sep 2024 — Jan 2026</span>
-              <p class="timeline-text">Focused on Data Analytics, Machine Learning, and Business Intelligence.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Bachelor of Computer Applications - Ms Ramaiah College Of Arts Science and Commerce</h4>
-              <span>Completed 2022</span>
-              <p class="timeline-text">Core courses in programming, databases, and software development.</p>
-            </li>
-          </ol>
-        </section>
+<div class="projects">
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Experience</h3>
-          </div>
 
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Data Engineer - Reach</h4>
-              <span>Apr 2023 — Aug 2024</span>
-              <p class="timeline-text">Built and maintained robust data pipelines for SaaS platforms on AWS.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Data Engineer/Analyst - Datami Mobile Solutions Pvt Ltd</h4>
-              <span>Dec 2022 — Mar 2023</span>
-              <p class="timeline-text">Performed analytics and reporting using Python, SQL, and Qlik Sense dashboards.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Sales Ambassador - Apple (Bangalore)</h4>
-              <span>Jan 2023 — Jul 2024</span>
-              <p class="timeline-text">Handled customer engagement, product knowledge, and sales analytics.</p>
-            </li>
-          </ol>
-        </section>
+<div class="project-card">
 
-        <section class="skill">
-          <h3 class="h3 skills-title">My Skills</h3>
-          <ul class="skills-list content-card">
-            <li class="skills-item">
-              <h5>Python</h5>
-            </li>
-            <li class="skills-item">
-              <h5>MySQL</h5>
-            </li>
-            <li class="skills-item">
-              <h5>Power BI</h5>
-            </li>
-            <li class="skills-item">
-              <h5>Tableau</h5>
-            </li>
-            <li class="skills-item">
-              <h5>AWS</h5>
-            </li>
-          </ul>
-        </section>
-      </article>
+<h3>Bank Marketing Prediction Model</h3>
 
-      <!-- PORTFOLIO -->
-      <article class="portfolio" data-page="portfolio">
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-        <section class="projects">
-          <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="data-analysis">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="project-1.jpg" alt="Bank Survey Analysis" loading="lazy">
-                </figure>
-                <h3 class="project-title">Bank Survey Analysis</h3>
-                <p class="project-category">Data Analysis & ML</p>
-              </a>
-            </li>
-            <li class="project-item active" data-filter-item data-category="data-visualization">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="project-2.png" alt="Operations Dashboard" loading="lazy">
-                </figure>
-                <h3 class="project-title">Operations Dashboard</h3>
-                <p class="project-category">Data Visualization</p>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
+<p>Machine learning model predicting customer subscription using classification algorithms.</p>
 
-      <!-- CONTACT -->
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-        <section class="mapbox">
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434508538!2d-6.267488684681834!3d53.33305637997996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9136cf66b1%3A0x6e2e6b9e0e54b1e!2sDublin%2C%20Ireland!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
-          <form action="#" class="form">
-            <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
-            <input type="email" name="email" class="form-input" placeholder="Email address" required>
-            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
-            <button class="form-btn" type="submit">
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </section>
-      </article>
+<a href="https://github.com/jayavardhan22" target="_blank">View Code</a>
 
-    </div>
-  </main>
+</div>
 
-  <!-- ionicon link -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<div class="project-card">
+
+<h3>Operations Dashboard</h3>
+
+<p>Interactive analytics dashboard built using Power BI for operational insights.</p>
+
+<a href="https://github.com/jayavardhan22" target="_blank">View Project</a>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>Data Pipeline Automation</h3>
+
+<p>Automated ETL pipeline extracting and processing large datasets.</p>
+
+<a href="https://github.com/jayavardhan22" target="_blank">View Code</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section id="contact" class="section">
+
+<h2>Contact</h2>
+
+<p>Email: jayavardhanp2204@gmail.com</p>
+
+<p>Phone (Ireland): +353 0892484461</p>
+
+<p>Phone (India): +91 7406165884</p>
+
+<p>
+LinkedIn: 
+<a href="https://www.linkedin.com/in/jayavardhan-premnath-a7293b237/" target="_blank">
+Profile
+</a>
+</p>
+
+<p>
+GitHub: 
+<a href="https://github.com/jayavardhan22" target="_blank">
+jayavardhan22
+</a>
+</p>
+
+<p>
+Instagram: 
+<a href="https://instagram.com/jayavardhan__p" target="_blank">
+@jayavardhan__p
+</a>
+</p>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Jayavardhan Premnath</p>
+
+</footer>
+
+<script src="js/script.js"></script>
 
 </body>
-
 </html>
