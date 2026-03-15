@@ -3,15 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jayavardhan Premnath | Data Engineer</title>
+    <title>Jayavardhan Premnath | Data Engineer Portfolio</title>
 
     <meta
       name="description"
-      content="Jayavardhan Premnath — Data Engineer. Builds CI/CD ETL pipelines and cloud analytics on AWS; delivers actionable BI dashboards using Python, SQL, and Power BI."
+      content="Jayavardhan Premnath — Data Engineer. Builds CI/CD data pipelines and cloud analytics on AWS; delivers BI dashboards using Python, SQL, and Power BI."
     />
+    <meta name="theme-color" content="#0f172a" />
 
+    <!-- Canonical (update after you deploy) -->
+    <link rel="canonical" href="https://example.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jayavardhan Premnath | Data Engineer Portfolio" />
+    <meta
+      property="og:description"
+      content="AWS ETL/CI-CD pipelines, Python/SQL, and BI dashboards (Power BI, Qlik Sense)."
+    />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="assets/images/og-cover.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jayavardhan Premnath | Data Engineer Portfolio" />
+    <meta
+      name="twitter:description"
+      content="AWS ETL/CI-CD pipelines, Python/SQL, and BI dashboards (Power BI, Qlik Sense)."
+    />
+    <meta name="twitter:image" content="assets/images/og-cover.png" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/favicons/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+
+    <!-- Perf -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="assets/images/profile.webp" type="image/webp" />
 
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -21,6 +53,8 @@
   </head>
 
   <body>
+    <a class="skip-link" href="#page1">Skip to content</a>
+
     <!-- NAVBAR -->
     <nav class="navbar" aria-label="Primary">
       <a class="logo" href="#" aria-label="Go to About page">Jayavardhan</a>
@@ -35,7 +69,8 @@
       <a
         href="resume/Jayavardhan-Premnath-Resume.pdf"
         class="resume-btn"
-        aria-label="Open Resume PDF"
+        aria-label="Open Jayavardhan Premnath Resume (PDF)"
+        title="Jayavardhan Premnath Resume"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -43,9 +78,8 @@
       </a>
     </nav>
 
-    <!-- PAGE WRAPPER -->
-    <main class="page-wrapper">
-      <!-- PAGE 1: ABOUT -->
+    <main class="page-wrapper" id="main">
+      <!-- PAGE 1 -->
       <section class="page active" id="page1" aria-label="About">
         <div class="about-screen">
           <div class="about-left">
@@ -96,15 +130,18 @@
 
           <div class="about-right">
             <div class="about-image">
-              <img
-                src="assets/images/profile.jpg"
-                class="profile-image"
-                alt="Profile image of Jayavardhan Premnath"
-                loading="eager"
-                decoding="async"
-                width="320"
-                height="320"
-              />
+              <picture>
+                <source srcset="assets/images/profile.webp" type="image/webp" />
+                <img
+                  src="assets/images/profile.jpg"
+                  class="profile-image"
+                  alt="Profile image of Jayavardhan Premnath"
+                  loading="eager"
+                  decoding="async"
+                  width="320"
+                  height="320"
+                />
+              </picture>
             </div>
 
             <div class="education-card">
@@ -122,11 +159,28 @@
         </div>
       </section>
 
-      <!-- PAGE 2: EXPERIENCE & SKILLS -->
+      <!-- PAGE 2 -->
       <section class="page" id="page2" aria-label="Experience and Skills" aria-hidden="true" inert>
         <div class="section">
           <div class="section-head">
             <h2>Experience</h2>
+          </div>
+
+          <div class="skills-panel skills-panel--full" aria-label="Tech stack summary">
+            <div class="skills-panel__head">
+              <h3 class="skills-panel__title">Tech Stack</h3>
+              <p class="skills-panel__subtitle">Primary production tools</p>
+            </div>
+            <div class="skills-tags" aria-label="Primary tech stack">
+              <span>AWS Lambda</span>
+              <span>S3</span>
+              <span>DynamoDB</span>
+              <span>CodePipeline</span>
+              <span>BigQuery</span>
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Power BI</span>
+            </div>
           </div>
 
           <div class="page2-stack" aria-label="Experience and skills stack">
@@ -165,19 +219,28 @@
                   <span class="env-pill">SQL</span>
                 </div>
 
-                <h4 class="role-subtitle">Key Contributions</h4>
+                <h4 class="role-subtitle">Key Contributions (Impact)</h4>
                 <ul class="impact-list">
-                  <li>Built CI/CD ETL pipelines on AWS (Lambda, DynamoDB, S3, CodePipeline) for MVNO analytics datasets.</li>
                   <li>
-                    Delivered and maintained <strong>20+ dashboards</strong> in Power BI (plus Qlik Sense), tracking churn, usage,
-                    acquisition, and revenue KPIs.
+                    Built CI/CD ETL pipelines on AWS (Lambda, DynamoDB, S3, CodePipeline) processing
+                    <strong>[N]+ records/day</strong> and publishing curated datasets for dashboards.
                   </li>
                   <li>
-                    Integrated HubSpot + BigQuery sources via Python (AWS Lambda) into curated BI datasets for customer success
-                    analytics.
+                    Delivered and maintained <strong>20+ dashboards</strong> (Power BI + Qlik Sense), reducing manual reporting by
+                    <strong>[X] hours/week</strong> through standardized KPI definitions.
                   </li>
-                  <li>Improved data freshness with event triggers and scheduled refresh/gateway configuration in Power BI.</li>
-                  <li>Shipped client initiatives in Agile/Scrum with cross-functional teams (Data Quality, DevOps, Marketing).</li>
+                  <li>
+                    Integrated HubSpot + BigQuery sources via Python (AWS Lambda), improving dataset completeness by
+                    <strong>[X]%</strong> and enabling automated customer success reporting.
+                  </li>
+                  <li>
+                    Improved data freshness from <strong>[X] hours</strong> to <strong>[Y] minutes</strong> using triggers + scheduled
+                    refresh and gateway configuration in Power BI.
+                  </li>
+                  <li>
+                    Reduced pipeline failures by <strong>[X]%</strong> by adding validations, retry logic, and operational fixes across
+                    deployed CI/CD workflows.
+                  </li>
                 </ul>
 
                 <h4 class="role-subtitle">Key Initiatives</h4>
@@ -191,7 +254,7 @@
 
             <div class="skills-panel skills-panel--full" aria-label="Core skills">
               <div class="skills-panel__head">
-                <h2 class="skills-panel__title">Core Skills</h2>
+                <h3 class="skills-panel__title">Core Skills</h3>
                 <p class="skills-panel__subtitle">Keywords recruiters scan for</p>
               </div>
 
@@ -250,6 +313,15 @@
                 </ul>
               </div>
             </div>
+
+            <div class="quote-card" aria-label="Recommendation">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <p class="quote-text">
+                Jayavardhan consistently delivered high-quality dashboards and stabilized critical pipelines with strong ownership
+                and clear communication.
+              </p>
+              <p class="quote-meta">— Recommendation (add name/title if available)</p>
+            </div>
           </div>
 
           <h2 class="section-title">Analytics Data Flow</h2>
@@ -258,17 +330,14 @@
             <div class="flow-board flow-board--with-arrows">
               <div class="flow-stage">
                 <div class="flow-stage__head">Sources</div>
-
                 <div class="flow-node">
                   <div class="flow-node__title">BigQuery</div>
                   <div class="flow-node__meta">Source (usage data)</div>
                 </div>
-
                 <div class="flow-node">
                   <div class="flow-node__title">HubSpot</div>
                   <div class="flow-node__meta">Source (customer interactions)</div>
                 </div>
-
                 <div class="flow-node">
                   <div class="flow-node__title">DynamoDB</div>
                   <div class="flow-node__meta">Source (operational data)</div>
@@ -277,7 +346,6 @@
 
               <div class="flow-stage">
                 <div class="flow-stage__head">Processing</div>
-
                 <div class="flow-node flow-node--accent">
                   <div class="flow-node__title">AWS Lambda</div>
                   <div class="flow-node__meta">Python transforms</div>
@@ -286,7 +354,6 @@
 
               <div class="flow-stage">
                 <div class="flow-stage__head">Storage</div>
-
                 <div class="flow-node">
                   <div class="flow-node__title">S3 Bucket</div>
                   <div class="flow-node__meta">Processed storage</div>
@@ -295,12 +362,10 @@
 
               <div class="flow-stage">
                 <div class="flow-stage__head">Dashboards</div>
-
                 <div class="flow-node">
                   <div class="flow-node__title">Power BI</div>
                   <div class="flow-node__meta">Analytics dashboards</div>
                 </div>
-
                 <div class="flow-node">
                   <div class="flow-node__title">Qlik Sense</div>
                   <div class="flow-node__meta">Analytics dashboards</div>
@@ -321,7 +386,7 @@
         </div>
       </section>
 
-      <!-- PAGE 3: PROJECTS (3 tablets) -->
+      <!-- PAGE 3 -->
       <section class="page" id="page3" aria-label="Projects" aria-hidden="true" inert>
         <div class="section">
           <div class="section-head">
@@ -329,23 +394,29 @@
           </div>
 
           <div class="projects-grid" aria-label="Projects list">
-            <!-- Tablet 1 -->
             <article class="project-tablet" aria-label="Airline Operations Dashboard project">
               <div class="tablet-top">
                 <h3 class="tablet-title">Airline Operations Dashboard</h3>
                 <div class="tablet-pill">Dashboard</div>
               </div>
 
-              <p class="tablet-desc">
-                Interactive dashboard analyzing airline operational performance for reporting and decision-making.
-              </p>
+              <div class="tablet-block">
+                <h4 class="tablet-h">Problem</h4>
+                <p class="tablet-p">Stakeholders needed quick visibility into airline operational performance and delay drivers.</p>
+              </div>
 
-              <h4 class="project-subtitle">Highlights</h4>
-              <ul class="tablet-list">
-                <li>Drill-down views for on-time performance, delays, and cancellations.</li>
-                <li>KPI layer for route-level trends and operational insights.</li>
-                <li>Optimized visuals for concise stakeholder reporting.</li>
-              </ul>
+              <div class="tablet-block">
+                <h4 class="tablet-h">Solution</h4>
+                <ul class="tablet-list">
+                  <li>Built drill-down views for on-time performance, delays, and cancellations.</li>
+                  <li>Designed KPI layer for route-level trends and executive reporting.</li>
+                </ul>
+              </div>
+
+              <div class="tablet-block">
+                <h4 class="tablet-h">Impact</h4>
+                <p class="tablet-p">Reduced analysis time by <strong>[X]%</strong> and centralized <strong>[N]</strong> key KPIs.</p>
+              </div>
 
               <h4 class="project-subtitle">Tech Stack</h4>
               <div class="skills-tags">
@@ -366,21 +437,31 @@
               </div>
             </article>
 
-            <!-- Tablet 2 -->
             <article class="project-tablet" aria-label="Bank Marketing ML Model project">
               <div class="tablet-top">
                 <h3 class="tablet-title">Bank Marketing ML Model</h3>
                 <div class="tablet-pill tablet-pill--ml">ML</div>
               </div>
 
-              <p class="tablet-desc">Classification model predicting customer subscription behavior using marketing data.</p>
+              <div class="tablet-block">
+                <h4 class="tablet-h">Problem</h4>
+                <p class="tablet-p">Predict customer subscription behavior to improve targeting and campaign efficiency.</p>
+              </div>
 
-              <h4 class="project-subtitle">Highlights</h4>
-              <ul class="tablet-list">
-                <li>Cleaned and preprocessed dataset for modeling and evaluation.</li>
-                <li>Trained and evaluated classification models with validated metrics.</li>
-                <li>Interpreted feature influence to explain outcomes.</li>
-              </ul>
+              <div class="tablet-block">
+                <h4 class="tablet-h">Solution</h4>
+                <ul class="tablet-list">
+                  <li>Prepared pipelines for cleaning, preprocessing, and feature preparation.</li>
+                  <li>Trained and evaluated classification models with validated metrics.</li>
+                </ul>
+              </div>
+
+              <div class="tablet-block">
+                <h4 class="tablet-h">Impact</h4>
+                <p class="tablet-p">
+                  Achieved <strong>[X]</strong> baseline score and reduced manual segmentation effort by <strong>[Y]%</strong>.
+                </p>
+              </div>
 
               <h4 class="project-subtitle">Tech Stack</h4>
               <div class="skills-tags">
@@ -401,21 +482,29 @@
               </div>
             </article>
 
-            <!-- Tablet 3 -->
             <article class="project-tablet" aria-label="Traffic Collision Data Quality project">
               <div class="tablet-top">
                 <h3 class="tablet-title">Traffic Collision Data Quality</h3>
                 <div class="tablet-pill tablet-pill--dq">Data Quality</div>
               </div>
 
-              <p class="tablet-desc">Hybrid ML + rule-based validation to improve dataset reliability and quality checks.</p>
+              <div class="tablet-block">
+                <h4 class="tablet-h">Problem</h4>
+                <p class="tablet-p">Large datasets had missing and inconsistent fields impacting analytics reliability.</p>
+              </div>
 
-              <h4 class="project-subtitle">Highlights</h4>
-              <ul class="tablet-list">
-                <li>Analyzed missing values, inconsistencies, and anomalies in large datasets.</li>
-                <li>Implemented validation logic to score and improve reliability.</li>
-                <li>Documented methodology with reproducible steps.</li>
-              </ul>
+              <div class="tablet-block">
+                <h4 class="tablet-h">Solution</h4>
+                <ul class="tablet-list">
+                  <li>Analyzed anomalies and missingness patterns to identify quality gaps.</li>
+                  <li>Implemented rules + ML signals to score reliability and validate records.</li>
+                </ul>
+              </div>
+
+              <div class="tablet-block">
+                <h4 class="tablet-h">Impact</h4>
+                <p class="tablet-p">Improved validation coverage to <strong>[X]%</strong> and reduced bad records by <strong>[Y]%</strong>.</p>
+              </div>
 
               <h4 class="project-subtitle">Tech Stack</h4>
               <div class="skills-tags">
@@ -451,7 +540,7 @@
         </div>
       </section>
 
-      <!-- PAGE 4: CONTACT (interactive) -->
+      <!-- PAGE 4 -->
       <section class="page" id="page4" aria-label="Contact" aria-hidden="true" inert>
         <div class="section">
           <div class="section-head">
@@ -536,12 +625,13 @@
               href="resume/Jayavardhan-Premnath-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Open resume PDF"
+              aria-label="Open Jayavardhan Premnath Resume (PDF)"
+              title="Jayavardhan Premnath Resume"
             >
               <div class="tile-icon" aria-hidden="true">⤓</div>
               <div class="tile-content">
                 <div class="tile-title">Resume</div>
-                <div class="tile-value">Jayavardhan-Premnath-Resume.pdf</div>
+                <div class="tile-value">Jayavardhan Premnath</div>
               </div>
               <div class="tile-cta" aria-hidden="true">Open</div>
             </a>
@@ -549,6 +639,18 @@
         </div>
       </section>
     </main>
+
+    <footer class="site-footer" aria-label="Footer links">
+      <div class="footer-inner">
+        <span class="footer-label">Quick Links:</span>
+        <a href="mailto:jayavardhanp2204@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/jayavardhan-premnath-a7293b237/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+        <a href="https://github.com/jayavardhan22" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="resume/Jayavardhan-Premnath-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      </div>
+    </footer>
 
     <!-- NAVIGATION ARROWS -->
     <div class="nav-arrows" aria-label="Page navigation arrows">
@@ -574,11 +676,18 @@
         const prevBtn = document.getElementById("prevBtn");
         const nextBtn = document.getElementById("nextBtn");
 
+        const updateArrowVisibility = () => {
+          prevBtn.classList.toggle("is-hidden", currentPage === 0);
+          nextBtn.classList.toggle("is-hidden", currentPage === pages.length - 1);
+
+          prevBtn.setAttribute("aria-disabled", String(currentPage === 0));
+          nextBtn.setAttribute("aria-disabled", String(currentPage === pages.length - 1));
+        };
+
         const setPageState = (activeIndex) => {
           pages.forEach((page, i) => {
             const isActive = i === activeIndex;
             page.classList.toggle("active", isActive);
-
             page.toggleAttribute("aria-hidden", !isActive);
 
             if (!isActive) page.setAttribute("inert", "");
@@ -595,27 +704,25 @@
           });
 
           currentPage = activeIndex;
+          updateArrowVisibility();
         };
 
         const showPage = (index) => {
           if (index < 0 || index >= pages.length) return;
           setPageState(index);
 
-          const heading = pages[index].querySelector("h1, h2, h3");
-          if (heading) {
-            heading.setAttribute("tabindex", "-1");
-            heading.focus({ preventScroll: true });
-            heading.addEventListener("blur", () => heading.removeAttribute("tabindex"), { once: true });
-          }
+          window.setTimeout(() => {
+            const heading = pages[index].querySelector("h1, h2, h3");
+            if (heading) {
+              heading.setAttribute("tabindex", "-1");
+              heading.focus({ preventScroll: true });
+              heading.addEventListener("blur", () => heading.removeAttribute("tabindex"), { once: true });
+            }
+          }, 50);
         };
 
-        navButtons.forEach((btn) => {
-          btn.addEventListener("click", () => showPage(Number(btn.dataset.page)));
-        });
-
-        dots.forEach((dot) => {
-          dot.addEventListener("click", () => showPage(Number(dot.dataset.page)));
-        });
+        navButtons.forEach((btn) => btn.addEventListener("click", () => showPage(Number(btn.dataset.page))));
+        dots.forEach((dot) => dot.addEventListener("click", () => showPage(Number(dot.dataset.page))));
 
         nextBtn.addEventListener("click", () => {
           if (currentPage < pages.length - 1) showPage(currentPage + 1);
@@ -635,7 +742,6 @@
           if (e.key === "ArrowLeft") prevBtn.click();
         });
 
-        // Accordion logic used only on Experience page
         const toggles = Array.from(document.querySelectorAll(".js-accordion-toggle"));
 
         const openAccordion = (toggleBtn, content) => {
