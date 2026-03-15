@@ -10,6 +10,9 @@
       content="Jayavardhan Premnath — Data Engineer. Builds CI/CD ETL pipelines and cloud analytics on AWS; delivers actionable BI dashboards using Python, SQL, and Power BI."
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
@@ -23,16 +26,14 @@
       <a class="logo" href="#" aria-label="Go to About page">Jayavardhan</a>
 
       <ul class="nav-links">
-        <li>
-          <button type="button" class="nav-btn active" data-page="0" aria-current="page">About</button>
-        </li>
+        <li><button type="button" class="nav-btn active" data-page="0" aria-current="page">About</button></li>
         <li><button type="button" class="nav-btn" data-page="1">Experience</button></li>
         <li><button type="button" class="nav-btn" data-page="2">Projects</button></li>
         <li><button type="button" class="nav-btn" data-page="3">Contact</button></li>
       </ul>
 
       <a
-        href="assets/Jayavardhan_Resume.pdf"
+        href="resume/Jayavardhan-Premnath-Resume.pdf"
         class="resume-btn"
         aria-label="Open Resume PDF"
         target="_blank"
@@ -56,20 +57,18 @@
               building interactive BI dashboards for business intelligence and reporting.
             </p>
 
-            <div class="about-highlights" aria-label="Highlights">
-              <div class="highlight-card">
-                <div class="highlight-value">20+</div>
-                <div class="highlight-label">Power BI dashboards delivered & maintained</div>
+            <div class="outcomes" aria-label="Key outcomes">
+              <div class="outcome">
+                <div class="outcome__value">20+</div>
+                <div class="outcome__label">Dashboards delivered & maintained</div>
               </div>
-
-              <div class="highlight-card">
-                <div class="highlight-value">[X]+</div>
-                <div class="highlight-label">CI/CD pipelines deployed (AWS)</div>
+              <div class="outcome">
+                <div class="outcome__value">[X]+</div>
+                <div class="outcome__label">CI/CD pipelines deployed</div>
               </div>
-
-              <div class="highlight-card">
-                <div class="highlight-value">AWS</div>
-                <div class="highlight-label">Lambda · S3 · DynamoDB · CodePipeline</div>
+              <div class="outcome">
+                <div class="outcome__value">AWS Data Stack</div>
+                <div class="outcome__label">Lambda · S3 · DynamoDB · CodePipeline</div>
               </div>
             </div>
 
@@ -101,8 +100,10 @@
                 src="assets/images/profile.jpg"
                 class="profile-image"
                 alt="Profile image of Jayavardhan Premnath"
-                loading="lazy"
+                loading="eager"
                 decoding="async"
+                width="320"
+                height="320"
               />
             </div>
 
@@ -125,123 +126,132 @@
       <section class="page" id="page2" aria-label="Experience and Skills" aria-hidden="true" inert>
         <div class="section">
           <div class="section-head">
-            <h2>Experience & Skills</h2>
-            <p class="section-lead">
-              Cloud ETL and analytics delivery for telecom MVNO clients — from ingestion and processing to BI dashboards.
-            </p>
+            <h2>Experience</h2>
           </div>
 
-          <!-- Combined block: Experience + Core Skills -->
-          <div class="profile-block" aria-label="Reach experience and core skills">
-            <div class="profile-block__left">
-              <div class="experience-card experience-card--wide">
-                <button
-                  type="button"
-                  class="experience-header js-accordion-toggle"
-                  id="experienceToggle-1"
-                  aria-controls="experienceContent-1"
-                  aria-expanded="false"
-                  data-target="experienceContent-1"
-                >
-                  <span class="card-title">Reach — Data Engineer (Engineer 1)</span>
-                  <span class="expand-icon" aria-hidden="true">+</span>
-                </button>
+          <div class="page2-stack" aria-label="Experience and skills stack">
+            <div class="experience-card experience-card--wide">
+              <button
+                type="button"
+                class="experience-header js-accordion-toggle"
+                id="experienceToggle-1"
+                aria-controls="experienceContent-1"
+                aria-expanded="false"
+                data-target="experienceContent-1"
+              >
+                <span class="card-title">Reach — Data Engineer (Engineer 1)</span>
+                <span class="role-pill" aria-label="Role dates">Dec 2022 – Sep 2024</span>
+                <span class="expand-icon" aria-hidden="true">+</span>
+              </button>
 
-                <div
-                  class="experience-content"
-                  id="experienceContent-1"
-                  role="region"
-                  aria-labelledby="experienceToggle-1"
-                  hidden
-                >
-                  <p class="meta">Dec 2022 – Sep 2024 · Bangalore, India</p>
+              <div class="experience-content" id="experienceContent-1" role="region" aria-labelledby="experienceToggle-1" hidden>
+                <p class="meta">Bangalore, India</p>
 
+                <div class="company-callout" aria-label="Company overview">
                   <p class="company-intro">
-                    Reach supported U.S.-based telecom MVNO clients by delivering analytics-ready datasets and BI dashboards for
-                    business teams.
+                    Cloud-native telecom SaaS enabling MVNO/broadband/IoT services. Supports high-volume data processing and
+                    real-time analytics for operational insights and reporting.
                   </p>
+                </div>
 
-                  <h4 class="role-subtitle">Recruiter Summary (Impact)</h4>
-                  <ul class="impact-list">
-                    <li>Built CI/CD ETL pipelines on AWS (Lambda, DynamoDB, S3, CodePipeline) for MVNO analytics datasets.</li>
-                    <li>
-                      Delivered and maintained <strong>20+ dashboards</strong> in Power BI (plus Qlik Sense), tracking churn, usage,
-                      acquisition, and revenue KPIs.
-                    </li>
-                    <li>
-                      Integrated HubSpot + BigQuery sources via Python (AWS Lambda) into curated BI datasets for customer success
-                      analytics.
-                    </li>
-                    <li>Improved data freshness with event triggers and scheduled refresh/gateway configuration in Power BI.</li>
-                    <li>Shipped client initiatives in Agile/Scrum with cross-functional teams (Data Quality, DevOps, Marketing).</li>
-                  </ul>
+                <div class="env-row" aria-label="Environment and tools">
+                  <span class="env-pill">AWS Lambda</span>
+                  <span class="env-pill">S3</span>
+                  <span class="env-pill">DynamoDB</span>
+                  <span class="env-pill">CodePipeline</span>
+                  <span class="env-pill">BigQuery</span>
+                  <span class="env-pill">Power BI</span>
+                  <span class="env-pill">Python</span>
+                  <span class="env-pill">SQL</span>
+                </div>
 
-                  <h4 class="role-subtitle">Key Initiatives</h4>
-                  <div class="initiatives-chips" role="list" aria-label="Key initiatives">
-                    <span class="chip" role="listitem">Power BI Integration Ownership</span>
-                    <span class="chip" role="listitem">Pipeline Stabilization & Fixes</span>
-                    <span class="chip" role="listitem">Client Dashboards & Enhancements</span>
-                  </div>
+                <h4 class="role-subtitle">Key Contributions</h4>
+                <ul class="impact-list">
+                  <li>Built CI/CD ETL pipelines on AWS (Lambda, DynamoDB, S3, CodePipeline) for MVNO analytics datasets.</li>
+                  <li>
+                    Delivered and maintained <strong>20+ dashboards</strong> in Power BI (plus Qlik Sense), tracking churn, usage,
+                    acquisition, and revenue KPIs.
+                  </li>
+                  <li>
+                    Integrated HubSpot + BigQuery sources via Python (AWS Lambda) into curated BI datasets for customer success
+                    analytics.
+                  </li>
+                  <li>Improved data freshness with event triggers and scheduled refresh/gateway configuration in Power BI.</li>
+                  <li>Shipped client initiatives in Agile/Scrum with cross-functional teams (Data Quality, DevOps, Marketing).</li>
+                </ul>
+
+                <h4 class="role-subtitle">Key Initiatives</h4>
+                <div class="initiatives-chips initiatives-chips--prominent" role="list" aria-label="Key initiatives">
+                  <span class="chip" role="listitem">Power BI Integration Ownership</span>
+                  <span class="chip" role="listitem">Pipeline Stabilization & Fixes</span>
+                  <span class="chip" role="listitem">Client Dashboards & Enhancements</span>
                 </div>
               </div>
             </div>
 
-            <aside class="profile-block__right" aria-label="Core skills">
-              <div class="skills-panel skills-panel--tight">
-                <h3 class="panel-title">Core Skills</h3>
+            <div class="skills-panel skills-panel--full" aria-label="Core skills">
+              <div class="skills-panel__head">
+                <h2 class="skills-panel__title">Core Skills</h2>
+                <p class="skills-panel__subtitle">Keywords recruiters scan for</p>
+              </div>
 
-                <div class="skills-split">
-                  <div>
-                    <h4 class="panel-subtitle">Data Engineering</h4>
-                    <ul class="panel-list">
-                      <li>ETL pipeline development</li>
-                      <li>CI/CD deployment (AWS CodePipeline)</li>
-                      <li>Data quality & optimization</li>
-                      <li>API integration</li>
-                    </ul>
+              <div class="skills-cards" role="list" aria-label="Skill groups">
+                <div class="skill-card" role="listitem">
+                  <div class="skill-card__title">Data Engineering</div>
+                  <ul class="skill-card__list">
+                    <li>ETL pipeline development</li>
+                    <li>CI/CD deployment (AWS CodePipeline)</li>
+                    <li>Data modeling & dataset curation</li>
+                    <li>Data quality & optimization</li>
+                  </ul>
+                </div>
 
-                    <h4 class="panel-subtitle">Languages</h4>
-                    <div class="skills-tags" aria-label="Languages">
-                      <span>Python</span>
-                      <span>SQL</span>
-                      <span>PySpark</span>
-                      <span>R</span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h4 class="panel-subtitle">Cloud & Tools</h4>
-                    <div class="skills-tags" aria-label="Cloud and tools">
-                      <span>AWS Lambda</span>
-                      <span>S3</span>
-                      <span>DynamoDB</span>
-                      <span>EC2</span>
-                      <span>BigQuery</span>
-                      <span>Databricks</span>
-                      <span>Git</span>
-                      <span>Bitbucket</span>
-                    </div>
-
-                    <h4 class="panel-subtitle">BI</h4>
-                    <div class="skills-tags" aria-label="Analytics tools">
-                      <span>Power BI</span>
-                      <span>Tableau</span>
-                      <span>Qlik Sense</span>
-                    </div>
+                <div class="skill-card" role="listitem">
+                  <div class="skill-card__title">Cloud & Tools</div>
+                  <div class="skills-tags" aria-label="Cloud and tools">
+                    <span>AWS Lambda</span>
+                    <span>S3</span>
+                    <span>DynamoDB</span>
+                    <span>EC2</span>
+                    <span>BigQuery</span>
+                    <span>Databricks</span>
+                    <span>Git</span>
+                    <span>Bitbucket</span>
                   </div>
                 </div>
 
-                <h4 class="panel-subtitle">Collaboration</h4>
-                <ul class="panel-list">
+                <div class="skill-card" role="listitem">
+                  <div class="skill-card__title">Analytics & BI</div>
+                  <div class="skills-tags" aria-label="Analytics tools">
+                    <span>Power BI</span>
+                    <span>Tableau</span>
+                    <span>Qlik Sense</span>
+                  </div>
+                  <div class="skill-card__hint">Dashboards, KPIs, refresh, gateway config</div>
+                </div>
+
+                <div class="skill-card" role="listitem">
+                  <div class="skill-card__title">Languages</div>
+                  <div class="skills-tags" aria-label="Languages">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>PySpark</span>
+                    <span>R</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-footer">
+                <div class="skills-footer__title">Collaboration</div>
+                <ul class="skills-footer__list">
                   <li>Stakeholder engagement</li>
                   <li>Cross-functional collaboration</li>
                   <li>Agile/Scrum delivery</li>
                 </ul>
               </div>
-            </aside>
+            </div>
           </div>
 
-          <!-- Advanced flow -->
           <h2 class="section-title">Analytics Data Flow</h2>
 
           <div class="flow-wrap" aria-label="Analytics data flow">
@@ -311,135 +321,120 @@
         </div>
       </section>
 
-      <!-- PAGE 3: PROJECTS -->
+      <!-- PAGE 3: PROJECTS (3 tablets) -->
       <section class="page" id="page3" aria-label="Projects" aria-hidden="true" inert>
         <div class="section">
-          <h2>Projects</h2>
+          <div class="section-head">
+            <h2>Projects</h2>
+          </div>
 
-          <div class="experience-card">
-            <button
-              type="button"
-              class="experience-header js-accordion-toggle"
-              id="projectToggle-1"
-              aria-controls="projectContent-1"
-              aria-expanded="false"
-              data-target="projectContent-1"
-            >
-              <span class="card-title">Airline Operations Dashboard</span>
-              <span class="expand-icon" aria-hidden="true">+</span>
-            </button>
+          <div class="projects-grid" aria-label="Projects list">
+            <!-- Tablet 1 -->
+            <article class="project-tablet" aria-label="Airline Operations Dashboard project">
+              <div class="tablet-top">
+                <h3 class="tablet-title">Airline Operations Dashboard</h3>
+                <div class="tablet-pill">Dashboard</div>
+              </div>
 
-            <div class="experience-content" id="projectContent-1" role="region" aria-labelledby="projectToggle-1" hidden>
-              <p>Interactive dashboard analyzing airline operational performance for executive reporting.</p>
+              <p class="tablet-desc">
+                Interactive dashboard analyzing airline operational performance for reporting and decision-making.
+              </p>
 
               <h4 class="project-subtitle">Highlights</h4>
-              <ul>
-                <li>Built drill-down views to analyze on-time performance, delays, and cancellations.</li>
-                <li>Designed KPI layer for route-level trends and operational insights.</li>
-                <li>Optimized visuals for clear stakeholder consumption in a reporting format.</li>
+              <ul class="tablet-list">
+                <li>Drill-down views for on-time performance, delays, and cancellations.</li>
+                <li>KPI layer for route-level trends and operational insights.</li>
+                <li>Optimized visuals for concise stakeholder reporting.</li>
               </ul>
 
               <h4 class="project-subtitle">Tech Stack</h4>
-              <div class="skills-tags" aria-label="Tech stack">
+              <div class="skills-tags">
                 <span>Power BI</span>
                 <span>Tableau</span>
                 <span>SQL</span>
               </div>
 
-              <p class="project-links">
+              <div class="tablet-actions">
                 <a
+                  class="btn-link"
                   href="https://github.com/jayavardhan22/Airline-Operations-Dashboard"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   GitHub
                 </a>
-              </p>
-            </div>
-          </div>
+              </div>
+            </article>
 
-          <div class="experience-card stack-gap">
-            <button
-              type="button"
-              class="experience-header js-accordion-toggle"
-              id="projectToggle-2"
-              aria-controls="projectContent-2"
-              aria-expanded="false"
-              data-target="projectContent-2"
-            >
-              <span class="card-title">Bank Marketing ML Model</span>
-              <span class="expand-icon" aria-hidden="true">+</span>
-            </button>
+            <!-- Tablet 2 -->
+            <article class="project-tablet" aria-label="Bank Marketing ML Model project">
+              <div class="tablet-top">
+                <h3 class="tablet-title">Bank Marketing ML Model</h3>
+                <div class="tablet-pill tablet-pill--ml">ML</div>
+              </div>
 
-            <div class="experience-content" id="projectContent-2" role="region" aria-labelledby="projectToggle-2" hidden>
-              <p>Machine learning classification model predicting customer subscription behavior.</p>
+              <p class="tablet-desc">Classification model predicting customer subscription behavior using marketing data.</p>
 
               <h4 class="project-subtitle">Highlights</h4>
-              <ul>
-                <li>Cleaned and preprocessed marketing data for modeling and evaluation.</li>
+              <ul class="tablet-list">
+                <li>Cleaned and preprocessed dataset for modeling and evaluation.</li>
                 <li>Trained and evaluated classification models with validated metrics.</li>
-                <li>Interpreted feature influence to explain model outcomes.</li>
+                <li>Interpreted feature influence to explain outcomes.</li>
               </ul>
 
               <h4 class="project-subtitle">Tech Stack</h4>
-              <div class="skills-tags" aria-label="Tech stack">
+              <div class="skills-tags">
                 <span>Python</span>
                 <span>pandas</span>
                 <span>scikit-learn</span>
               </div>
 
-              <p class="project-links">
+              <div class="tablet-actions">
                 <a
+                  class="btn-link"
                   href="https://github.com/jayavardhan22/Machine-Learning-Project_Bank_Marketing/blob/main/Bank_marketing_deposit.ipynb"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   GitHub
                 </a>
-              </p>
-            </div>
-          </div>
+              </div>
+            </article>
 
-          <div class="experience-card stack-gap">
-            <button
-              type="button"
-              class="experience-header js-accordion-toggle"
-              id="projectToggle-3"
-              aria-controls="projectContent-3"
-              aria-expanded="false"
-              data-target="projectContent-3"
-            >
-              <span class="card-title">Traffic Collision Data Quality (ML + Rules)</span>
-              <span class="expand-icon" aria-hidden="true">+</span>
-            </button>
+            <!-- Tablet 3 -->
+            <article class="project-tablet" aria-label="Traffic Collision Data Quality project">
+              <div class="tablet-top">
+                <h3 class="tablet-title">Traffic Collision Data Quality</h3>
+                <div class="tablet-pill tablet-pill--dq">Data Quality</div>
+              </div>
 
-            <div class="experience-content" id="projectContent-3" role="region" aria-labelledby="projectToggle-3" hidden>
-              <p>Hybrid ML and rule-based approach for data quality validation in traffic collision datasets.</p>
+              <p class="tablet-desc">Hybrid ML + rule-based validation to improve dataset reliability and quality checks.</p>
 
               <h4 class="project-subtitle">Highlights</h4>
-              <ul>
-                <li>Analyzed missing values, inconsistencies, and anomalies in high-volume datasets.</li>
-                <li>Implemented validation logic to score and improve dataset reliability.</li>
-                <li>Documented methodology and evaluation with reproducible steps.</li>
+              <ul class="tablet-list">
+                <li>Analyzed missing values, inconsistencies, and anomalies in large datasets.</li>
+                <li>Implemented validation logic to score and improve reliability.</li>
+                <li>Documented methodology with reproducible steps.</li>
               </ul>
 
               <h4 class="project-subtitle">Tech Stack</h4>
-              <div class="skills-tags" aria-label="Tech stack">
+              <div class="skills-tags">
                 <span>Python</span>
                 <span>SQL</span>
                 <span>Machine Learning</span>
               </div>
 
-              <p class="project-links">
+              <div class="tablet-actions">
                 <a
+                  class="btn-link"
                   href="https://github.com/jayavardhan22/A_Machine_Learning_and_Rule-Based_Approach_for_Data_Quality_Validation/tree/main"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   GitHub
                 </a>
-              </p>
-            </div>
+              </div>
+            </article>
           </div>
 
           <h2 class="section-title">Awards & Achievements</h2>
@@ -456,34 +451,100 @@
         </div>
       </section>
 
-      <!-- PAGE 4: CONTACT -->
+      <!-- PAGE 4: CONTACT (interactive) -->
       <section class="page" id="page4" aria-label="Contact" aria-hidden="true" inert>
         <div class="section">
-          <h2>Contact</h2>
+          <div class="section-head">
+            <h2>Contact</h2>
+          </div>
 
-          <div class="contact-card">
-            <p>
-              <span class="contact-label">Email</span>
-              <a href="mailto:jayavardhanp2204@gmail.com">jayavardhanp2204@gmail.com</a>
-            </p>
-            <p>
-              <span class="contact-label">Phone</span>
-              <a href="tel:+353892484461">+353 892 484 461</a>
-            </p>
-            <p>
-              <span class="contact-label">LinkedIn</span>
-              <a href="https://www.linkedin.com/in/jayavardhan-premnath-a7293b237/" target="_blank" rel="noopener noreferrer">
-                View Profile
-              </a>
-            </p>
-            <p>
-              <span class="contact-label">GitHub</span>
-              <a href="https://github.com/jayavardhan22" target="_blank" rel="noopener noreferrer">jayavardhan22</a>
-            </p>
-            <p>
-              <span class="contact-label">Resume</span>
-              <a href="assets/Jayavardhan_Resume.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>
-            </p>
+          <div class="contact-grid" aria-label="Contact methods">
+            <a class="contact-tile" href="mailto:jayavardhanp2204@gmail.com" aria-label="Email Jayavardhan">
+              <div class="tile-icon" aria-hidden="true">✉</div>
+              <div class="tile-content">
+                <div class="tile-title">Email</div>
+                <div class="tile-value">jayavardhanp2204@gmail.com</div>
+              </div>
+              <div class="tile-cta" aria-hidden="true">Open</div>
+            </a>
+
+            <a class="contact-tile" href="tel:+353892484461" aria-label="Call Irish number">
+              <div class="tile-icon" aria-hidden="true">☎</div>
+              <div class="tile-content">
+                <div class="tile-title">Phone (Ireland)</div>
+                <div class="tile-value">+353 892 484 461</div>
+              </div>
+              <div class="tile-cta" aria-hidden="true">Call</div>
+            </a>
+
+            <a class="contact-tile" href="tel:+917406165884" aria-label="Call Indian number">
+              <div class="tile-icon" aria-hidden="true">☎</div>
+              <div class="tile-content">
+                <div class="tile-title">Phone (India)</div>
+                <div class="tile-value">+91 74061 65884</div>
+              </div>
+              <div class="tile-cta" aria-hidden="true">Call</div>
+            </a>
+
+            <a
+              class="contact-tile"
+              href="https://www.linkedin.com/in/jayavardhan-premnath-a7293b237/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open LinkedIn"
+            >
+              <div class="tile-icon" aria-hidden="true">in</div>
+              <div class="tile-content">
+                <div class="tile-title">LinkedIn</div>
+                <div class="tile-value">jayavardhan-premnath</div>
+              </div>
+              <div class="tile-cta" aria-hidden="true">Open</div>
+            </a>
+
+            <a
+              class="contact-tile"
+              href="https://github.com/jayavardhan22"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open GitHub"
+            >
+              <div class="tile-icon" aria-hidden="true">⌂</div>
+              <div class="tile-content">
+                <div class="tile-title">GitHub</div>
+                <div class="tile-value">jayavardhan22</div>
+              </div>
+              <div class="tile-cta" aria-hidden="true">Open</div>
+            </a>
+
+            <a
+              class="contact-tile"
+              href="https://www.instagram.com/jayavardhan__p/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Instagram"
+            >
+              <div class="tile-icon" aria-hidden="true">◎</div>
+              <div class="tile-content">
+                <div class="tile-title">Instagram</div>
+                <div class="tile-value">@jayavardhan__p</div>
+              </div>
+              <div class="tile-cta" aria-hidden="true">Open</div>
+            </a>
+
+            <a
+              class="contact-tile contact-tile--resume"
+              href="resume/Jayavardhan-Premnath-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open resume PDF"
+            >
+              <div class="tile-icon" aria-hidden="true">⤓</div>
+              <div class="tile-content">
+                <div class="tile-title">Resume</div>
+                <div class="tile-value">Jayavardhan-Premnath-Resume.pdf</div>
+              </div>
+              <div class="tile-cta" aria-hidden="true">Open</div>
+            </a>
           </div>
         </div>
       </section>
@@ -574,6 +635,7 @@
           if (e.key === "ArrowLeft") prevBtn.click();
         });
 
+        // Accordion logic used only on Experience page
         const toggles = Array.from(document.querySelectorAll(".js-accordion-toggle"));
 
         const openAccordion = (toggleBtn, content) => {
