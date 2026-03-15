@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jayavardhan Premnath | Data Engineer</title>
 
-    <!-- CSS is inside /css -->
-    <link rel="stylesheet" href="css/style.css" />
+    <meta
+      name="description"
+      content="Jayavardhan Premnath — Data Engineer. Builds CI/CD ETL pipelines and cloud analytics on AWS; delivers actionable BI dashboards using Python, SQL, and Power BI."
+    />
 
+    <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
@@ -17,10 +20,12 @@
   <body>
     <!-- NAVBAR -->
     <nav class="navbar" aria-label="Primary">
-      <div class="logo">Jayavardhan</div>
+      <a class="logo" href="#" aria-label="Go to About page">Jayavardhan</a>
 
       <ul class="nav-links">
-        <li><button type="button" class="nav-btn" data-page="0">About</button></li>
+        <li>
+          <button type="button" class="nav-btn active" data-page="0" aria-current="page">About</button>
+        </li>
         <li><button type="button" class="nav-btn" data-page="1">Experience</button></li>
         <li><button type="button" class="nav-btn" data-page="2">Projects</button></li>
         <li><button type="button" class="nav-btn" data-page="3">Contact</button></li>
@@ -29,7 +34,7 @@
       <a
         href="assets/Jayavardhan_Resume.pdf"
         class="resume-btn"
-        aria-label="Download Resume"
+        aria-label="Open Resume PDF"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -45,19 +50,48 @@
           <div class="about-left">
             <h1>Jayavardhan Premnath</h1>
             <h3>Data Engineer</h3>
+
             <p>
-              Data Engineer experienced in building scalable data pipelines and analytics systems.
-              Specialized in transforming raw data into meaningful insights using cloud platforms,
-              ETL pipelines, and business intelligence tools.
+              Results-driven Data Engineer with hands-on experience in CI/CD data pipelines, ETL, and cloud data engineering, and
+              building interactive BI dashboards for business intelligence and reporting.
             </p>
 
-            <div class="skills-tags" aria-label="Skills">
-              <span>Python</span>
-              <span>SQL</span>
-              <span>AWS</span>
-              <span>BigQuery</span>
-              <span>Power BI</span>
-              <span>Qlik Sense</span>
+            <div class="about-highlights" aria-label="Highlights">
+              <div class="highlight-card">
+                <div class="highlight-value">20+</div>
+                <div class="highlight-label">Power BI dashboards delivered & maintained</div>
+              </div>
+
+              <div class="highlight-card">
+                <div class="highlight-value">[X]+</div>
+                <div class="highlight-label">CI/CD pipelines deployed (AWS)</div>
+              </div>
+
+              <div class="highlight-card">
+                <div class="highlight-value">AWS</div>
+                <div class="highlight-label">Lambda · S3 · DynamoDB · CodePipeline</div>
+              </div>
+            </div>
+
+            <div class="skills-block" aria-label="Skills and tools">
+              <h4 class="mini-heading">Technical Expertise</h4>
+              <div class="skills-tags" aria-label="Technical skills">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>AWS (Lambda, S3, DynamoDB, EC2)</span>
+                <span>CodePipeline</span>
+                <span>BigQuery</span>
+                <span>Power BI</span>
+                <span>Tableau</span>
+                <span>Qlik Sense</span>
+                <span>Databricks</span>
+                <span>PySpark</span>
+                <span>Git</span>
+                <span>Bitbucket</span>
+                <span>API Integration</span>
+                <span>Machine Learning</span>
+                <span>R</span>
+              </div>
             </div>
           </div>
 
@@ -68,103 +102,389 @@
                 class="profile-image"
                 alt="Profile image of Jayavardhan Premnath"
                 loading="lazy"
+                decoding="async"
               />
             </div>
 
             <div class="education-card">
               <h4>MSc Data Analytics</h4>
-              <span>Dublin Business School</span>
-              <p>2024 – 2025</p>
+              <span>Dublin Business School · Dublin, Ireland</span>
+              <p>Jan 2026</p>
             </div>
 
             <div class="education-card">
-              <h4>Bachelor of Computer Applications</h4>
-              <span>MS Ramaiah College</span>
-              <p>2019 – 2022</p>
+              <h4>Bachelor of Computer Applications (BCA)</h4>
+              <span>Ramaiah College of Arts, Science and Commerce · Bangalore, India</span>
+              <p>Sep 2022</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- PAGE 2: EXPERIENCE -->
-      <section class="page" id="page2" aria-label="Experience">
+      <!-- PAGE 2: EXPERIENCE & SKILLS -->
+      <section class="page" id="page2" aria-label="Experience and Skills" aria-hidden="true" inert>
         <div class="section">
-          <h2>Experience</h2>
+          <div class="section-head">
+            <h2>Experience & Skills</h2>
+            <p class="section-lead">
+              Cloud ETL and analytics delivery for telecom MVNO clients — from ingestion and processing to BI dashboards.
+            </p>
+          </div>
 
-          <div class="experience-card">
-            <button
-              type="button"
-              class="experience-header"
-              id="experienceToggle"
-              aria-controls="experienceContent"
-              aria-expanded="false"
-            >
-              <h3>Reach — Data Engineer</h3>
-              <span class="expand-icon" aria-hidden="true">+</span>
-            </button>
+          <!-- Combined block: Experience + Core Skills -->
+          <div class="profile-block" aria-label="Reach experience and core skills">
+            <div class="profile-block__left">
+              <div class="experience-card experience-card--wide">
+                <button
+                  type="button"
+                  class="experience-header js-accordion-toggle"
+                  id="experienceToggle-1"
+                  aria-controls="experienceContent-1"
+                  aria-expanded="false"
+                  data-target="experienceContent-1"
+                >
+                  <span class="card-title">Reach — Data Engineer (Engineer 1)</span>
+                  <span class="expand-icon" aria-hidden="true">+</span>
+                </button>
 
-            <div class="experience-content" id="experienceContent" role="region" aria-labelledby="experienceToggle">
-              <p>Bangalore, India | 2022 – 2024</p>
-              <ul>
-                <li>Started as Data Engineering Intern and transitioned to Engineer 1.</li>
-                <li>Built scalable ETL pipelines using Python and AWS Lambda.</li>
-                <li>Processed millions of records for analytics and reporting.</li>
-                <li>Developed dashboards using Power BI and Qlik Sense.</li>
-              </ul>
+                <div
+                  class="experience-content"
+                  id="experienceContent-1"
+                  role="region"
+                  aria-labelledby="experienceToggle-1"
+                  hidden
+                >
+                  <p class="meta">Dec 2022 – Sep 2024 · Bangalore, India</p>
+
+                  <p class="company-intro">
+                    Reach supported U.S.-based telecom MVNO clients by delivering analytics-ready datasets and BI dashboards for
+                    business teams.
+                  </p>
+
+                  <h4 class="role-subtitle">Recruiter Summary (Impact)</h4>
+                  <ul class="impact-list">
+                    <li>Built CI/CD ETL pipelines on AWS (Lambda, DynamoDB, S3, CodePipeline) for MVNO analytics datasets.</li>
+                    <li>
+                      Delivered and maintained <strong>20+ dashboards</strong> in Power BI (plus Qlik Sense), tracking churn, usage,
+                      acquisition, and revenue KPIs.
+                    </li>
+                    <li>
+                      Integrated HubSpot + BigQuery sources via Python (AWS Lambda) into curated BI datasets for customer success
+                      analytics.
+                    </li>
+                    <li>Improved data freshness with event triggers and scheduled refresh/gateway configuration in Power BI.</li>
+                    <li>Shipped client initiatives in Agile/Scrum with cross-functional teams (Data Quality, DevOps, Marketing).</li>
+                  </ul>
+
+                  <h4 class="role-subtitle">Key Initiatives</h4>
+                  <div class="initiatives-chips" role="list" aria-label="Key initiatives">
+                    <span class="chip" role="listitem">Power BI Integration Ownership</span>
+                    <span class="chip" role="listitem">Pipeline Stabilization & Fixes</span>
+                    <span class="chip" role="listitem">Client Dashboards & Enhancements</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <aside class="profile-block__right" aria-label="Core skills">
+              <div class="skills-panel skills-panel--tight">
+                <h3 class="panel-title">Core Skills</h3>
+
+                <div class="skills-split">
+                  <div>
+                    <h4 class="panel-subtitle">Data Engineering</h4>
+                    <ul class="panel-list">
+                      <li>ETL pipeline development</li>
+                      <li>CI/CD deployment (AWS CodePipeline)</li>
+                      <li>Data quality & optimization</li>
+                      <li>API integration</li>
+                    </ul>
+
+                    <h4 class="panel-subtitle">Languages</h4>
+                    <div class="skills-tags" aria-label="Languages">
+                      <span>Python</span>
+                      <span>SQL</span>
+                      <span>PySpark</span>
+                      <span>R</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 class="panel-subtitle">Cloud & Tools</h4>
+                    <div class="skills-tags" aria-label="Cloud and tools">
+                      <span>AWS Lambda</span>
+                      <span>S3</span>
+                      <span>DynamoDB</span>
+                      <span>EC2</span>
+                      <span>BigQuery</span>
+                      <span>Databricks</span>
+                      <span>Git</span>
+                      <span>Bitbucket</span>
+                    </div>
+
+                    <h4 class="panel-subtitle">BI</h4>
+                    <div class="skills-tags" aria-label="Analytics tools">
+                      <span>Power BI</span>
+                      <span>Tableau</span>
+                      <span>Qlik Sense</span>
+                    </div>
+                  </div>
+                </div>
+
+                <h4 class="panel-subtitle">Collaboration</h4>
+                <ul class="panel-list">
+                  <li>Stakeholder engagement</li>
+                  <li>Cross-functional collaboration</li>
+                  <li>Agile/Scrum delivery</li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+
+          <!-- Advanced flow -->
+          <h2 class="section-title">Analytics Data Flow</h2>
+
+          <div class="flow-wrap" aria-label="Analytics data flow">
+            <div class="flow-board flow-board--with-arrows">
+              <div class="flow-stage">
+                <div class="flow-stage__head">Sources</div>
+
+                <div class="flow-node">
+                  <div class="flow-node__title">BigQuery</div>
+                  <div class="flow-node__meta">Source (usage data)</div>
+                </div>
+
+                <div class="flow-node">
+                  <div class="flow-node__title">HubSpot</div>
+                  <div class="flow-node__meta">Source (customer interactions)</div>
+                </div>
+
+                <div class="flow-node">
+                  <div class="flow-node__title">DynamoDB</div>
+                  <div class="flow-node__meta">Source (operational data)</div>
+                </div>
+              </div>
+
+              <div class="flow-stage">
+                <div class="flow-stage__head">Processing</div>
+
+                <div class="flow-node flow-node--accent">
+                  <div class="flow-node__title">AWS Lambda</div>
+                  <div class="flow-node__meta">Python transforms</div>
+                </div>
+              </div>
+
+              <div class="flow-stage">
+                <div class="flow-stage__head">Storage</div>
+
+                <div class="flow-node">
+                  <div class="flow-node__title">S3 Bucket</div>
+                  <div class="flow-node__meta">Processed storage</div>
+                </div>
+              </div>
+
+              <div class="flow-stage">
+                <div class="flow-stage__head">Dashboards</div>
+
+                <div class="flow-node">
+                  <div class="flow-node__title">Power BI</div>
+                  <div class="flow-node__meta">Analytics dashboards</div>
+                </div>
+
+                <div class="flow-node">
+                  <div class="flow-node__title">Qlik Sense</div>
+                  <div class="flow-node__meta">Analytics dashboards</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flow-connectors" aria-hidden="true">
+              <div class="flow-connector"><span class="flow-connector__label">Extract</span></div>
+              <div class="flow-connector"><span class="flow-connector__label">Transform</span></div>
+              <div class="flow-connector"><span class="flow-connector__label">Publish</span></div>
             </div>
           </div>
 
-          <!-- DATA PIPELINE -->
-          <h2 class="section-title">Data Engineering Workflow</h2>
-          <div class="pipeline-flow" aria-label="Data engineering workflow">
-            <div class="pipeline-node">BigQuery</div>
-            <div class="pipeline-node">HubSpot</div>
-            <div class="pipeline-node">DynamoDB</div>
-            <div class="pipeline-arrow" aria-hidden="true">→</div>
-            <div class="pipeline-node">AWS Lambda (Python)</div>
-            <div class="pipeline-arrow" aria-hidden="true">→</div>
-            <div class="pipeline-node">S3 Bucket</div>
-            <div class="pipeline-arrow" aria-hidden="true">→</div>
-            <div class="pipeline-node">Power BI</div>
-            <div class="pipeline-node">Qlik Sense</div>
-          </div>
+          <p class="flow-caption">
+            <strong>Pattern:</strong> Sources → AWS Lambda (Python transforms) → S3 processed storage → BI dashboards.
+          </p>
         </div>
       </section>
 
       <!-- PAGE 3: PROJECTS -->
-      <section class="page" id="page3" aria-label="Projects">
+      <section class="page" id="page3" aria-label="Projects" aria-hidden="true" inert>
         <div class="section">
           <h2>Projects</h2>
 
-          <div class="projects-grid">
-            <div class="project-card">
-              <h3>Airline Analytics Dashboard</h3>
-              <p>Interactive Power BI dashboard analyzing airline operational performance.</p>
-            </div>
+          <div class="experience-card">
+            <button
+              type="button"
+              class="experience-header js-accordion-toggle"
+              id="projectToggle-1"
+              aria-controls="projectContent-1"
+              aria-expanded="false"
+              data-target="projectContent-1"
+            >
+              <span class="card-title">Airline Operations Dashboard</span>
+              <span class="expand-icon" aria-hidden="true">+</span>
+            </button>
 
-            <div class="project-card">
-              <h3>Bank Marketing ML Model</h3>
+            <div class="experience-content" id="projectContent-1" role="region" aria-labelledby="projectToggle-1" hidden>
+              <p>Interactive dashboard analyzing airline operational performance for executive reporting.</p>
+
+              <h4 class="project-subtitle">Highlights</h4>
+              <ul>
+                <li>Built drill-down views to analyze on-time performance, delays, and cancellations.</li>
+                <li>Designed KPI layer for route-level trends and operational insights.</li>
+                <li>Optimized visuals for clear stakeholder consumption in a reporting format.</li>
+              </ul>
+
+              <h4 class="project-subtitle">Tech Stack</h4>
+              <div class="skills-tags" aria-label="Tech stack">
+                <span>Power BI</span>
+                <span>Tableau</span>
+                <span>SQL</span>
+              </div>
+
+              <p class="project-links">
+                <a
+                  href="https://github.com/jayavardhan22/Airline-Operations-Dashboard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-card stack-gap">
+            <button
+              type="button"
+              class="experience-header js-accordion-toggle"
+              id="projectToggle-2"
+              aria-controls="projectContent-2"
+              aria-expanded="false"
+              data-target="projectContent-2"
+            >
+              <span class="card-title">Bank Marketing ML Model</span>
+              <span class="expand-icon" aria-hidden="true">+</span>
+            </button>
+
+            <div class="experience-content" id="projectContent-2" role="region" aria-labelledby="projectToggle-2" hidden>
               <p>Machine learning classification model predicting customer subscription behavior.</p>
-            </div>
 
-            <div class="project-card">
-              <h3>Traffic Data Quality ML</h3>
-              <p>Research project focused on improving large-scale system data quality.</p>
+              <h4 class="project-subtitle">Highlights</h4>
+              <ul>
+                <li>Cleaned and preprocessed marketing data for modeling and evaluation.</li>
+                <li>Trained and evaluated classification models with validated metrics.</li>
+                <li>Interpreted feature influence to explain model outcomes.</li>
+              </ul>
+
+              <h4 class="project-subtitle">Tech Stack</h4>
+              <div class="skills-tags" aria-label="Tech stack">
+                <span>Python</span>
+                <span>pandas</span>
+                <span>scikit-learn</span>
+              </div>
+
+              <p class="project-links">
+                <a
+                  href="https://github.com/jayavardhan22/Machine-Learning-Project_Bank_Marketing/blob/main/Bank_marketing_deposit.ipynb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-card stack-gap">
+            <button
+              type="button"
+              class="experience-header js-accordion-toggle"
+              id="projectToggle-3"
+              aria-controls="projectContent-3"
+              aria-expanded="false"
+              data-target="projectContent-3"
+            >
+              <span class="card-title">Traffic Collision Data Quality (ML + Rules)</span>
+              <span class="expand-icon" aria-hidden="true">+</span>
+            </button>
+
+            <div class="experience-content" id="projectContent-3" role="region" aria-labelledby="projectToggle-3" hidden>
+              <p>Hybrid ML and rule-based approach for data quality validation in traffic collision datasets.</p>
+
+              <h4 class="project-subtitle">Highlights</h4>
+              <ul>
+                <li>Analyzed missing values, inconsistencies, and anomalies in high-volume datasets.</li>
+                <li>Implemented validation logic to score and improve dataset reliability.</li>
+                <li>Documented methodology and evaluation with reproducible steps.</li>
+              </ul>
+
+              <h4 class="project-subtitle">Tech Stack</h4>
+              <div class="skills-tags" aria-label="Tech stack">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Machine Learning</span>
+              </div>
+
+              <p class="project-links">
+                <a
+                  href="https://github.com/jayavardhan22/A_Machine_Learning_and_Rule-Based_Approach_for_Data_Quality_Validation/tree/main"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <h2 class="section-title">Awards & Achievements</h2>
+          <div class="award-grid" aria-label="Awards">
+            <div class="award-card">
+              <h4>Rookie-Rockstar</h4>
+              <p>Awarded for delivering critical MVNO projects ahead of schedule.</p>
+            </div>
+            <div class="award-card">
+              <h4>Employee of the Month</h4>
+              <p>Awarded for high-impact delivery and consistent execution in client work.</p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- PAGE 4: CONTACT -->
-      <section class="page" id="page4" aria-label="Contact">
+      <section class="page" id="page4" aria-label="Contact" aria-hidden="true" inert>
         <div class="section">
           <h2>Contact</h2>
-          <p>Email: jayavardhanp2204@gmail.com</p>
-          <p>Phone: +353 0892484461</p>
-          <p>
-            LinkedIn:
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">View Profile</a>
-          </p>
+
+          <div class="contact-card">
+            <p>
+              <span class="contact-label">Email</span>
+              <a href="mailto:jayavardhanp2204@gmail.com">jayavardhanp2204@gmail.com</a>
+            </p>
+            <p>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+353892484461">+353 892 484 461</a>
+            </p>
+            <p>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/jayavardhan-premnath-a7293b237/" target="_blank" rel="noopener noreferrer">
+                View Profile
+              </a>
+            </p>
+            <p>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/jayavardhan22" target="_blank" rel="noopener noreferrer">jayavardhan22</a>
+            </p>
+            <p>
+              <span class="contact-label">Resume</span>
+              <a href="assets/Jayavardhan_Resume.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>
+            </p>
+          </div>
         </div>
       </section>
     </main>
@@ -193,15 +513,39 @@
         const prevBtn = document.getElementById("prevBtn");
         const nextBtn = document.getElementById("nextBtn");
 
+        const setPageState = (activeIndex) => {
+          pages.forEach((page, i) => {
+            const isActive = i === activeIndex;
+            page.classList.toggle("active", isActive);
+
+            page.toggleAttribute("aria-hidden", !isActive);
+
+            if (!isActive) page.setAttribute("inert", "");
+            else page.removeAttribute("inert");
+          });
+
+          dots.forEach((dot, i) => dot.classList.toggle("active", i === activeIndex));
+
+          navButtons.forEach((btn) => {
+            const isActive = Number(btn.dataset.page) === activeIndex;
+            btn.classList.toggle("active", isActive);
+            if (isActive) btn.setAttribute("aria-current", "page");
+            else btn.removeAttribute("aria-current");
+          });
+
+          currentPage = activeIndex;
+        };
+
         const showPage = (index) => {
           if (index < 0 || index >= pages.length) return;
+          setPageState(index);
 
-          pages.forEach((page) => page.classList.remove("active"));
-          dots.forEach((dot) => dot.classList.remove("active"));
-
-          pages[index].classList.add("active");
-          dots[index].classList.add("active");
-          currentPage = index;
+          const heading = pages[index].querySelector("h1, h2, h3");
+          if (heading) {
+            heading.setAttribute("tabindex", "-1");
+            heading.focus({ preventScroll: true });
+            heading.addEventListener("blur", () => heading.removeAttribute("tabindex"), { once: true });
+          }
         };
 
         navButtons.forEach((btn) => {
@@ -221,22 +565,58 @@
         });
 
         document.addEventListener("keydown", (e) => {
+          const tag = e.target?.tagName?.toLowerCase?.() || "";
+          const isFormField = ["input", "textarea", "select"].includes(tag);
+          if (isFormField) return;
+          if (e.altKey || e.ctrlKey || e.metaKey) return;
+
           if (e.key === "ArrowRight") nextBtn.click();
           if (e.key === "ArrowLeft") prevBtn.click();
         });
 
-        const experienceToggle = document.getElementById("experienceToggle");
-        const experienceContent = document.getElementById("experienceContent");
-        const expandIcon = experienceToggle?.querySelector(".expand-icon");
+        const toggles = Array.from(document.querySelectorAll(".js-accordion-toggle"));
 
-        const toggleExperience = () => {
-          experienceContent.classList.toggle("show");
-          const isOpen = experienceContent.classList.contains("show");
-          experienceToggle.setAttribute("aria-expanded", String(isOpen));
-          if (expandIcon) expandIcon.textContent = isOpen ? "−" : "+";
+        const openAccordion = (toggleBtn, content) => {
+          content.hidden = false;
+          content.classList.add("show");
+
+          content.style.maxHeight = content.scrollHeight + "px";
+          content.style.paddingTop = "20px";
+          content.style.paddingBottom = "20px";
+
+          toggleBtn.setAttribute("aria-expanded", "true");
+          const icon = toggleBtn.querySelector(".expand-icon");
+          if (icon) icon.textContent = "−";
         };
 
-        experienceToggle?.addEventListener("click", toggleExperience);
+        const closeAccordion = (toggleBtn, content) => {
+          content.classList.remove("show");
+          content.style.maxHeight = "0px";
+          content.style.paddingTop = "0px";
+          content.style.paddingBottom = "0px";
+
+          toggleBtn.setAttribute("aria-expanded", "false");
+          const icon = toggleBtn.querySelector(".expand-icon");
+          if (icon) icon.textContent = "+";
+
+          window.setTimeout(() => {
+            content.hidden = true;
+          }, 350);
+        };
+
+        const onToggle = (toggleBtn) => {
+          const targetId = toggleBtn.getAttribute("data-target");
+          const content = document.getElementById(targetId);
+          if (!content) return;
+
+          const isOpen = toggleBtn.getAttribute("aria-expanded") === "true";
+          if (isOpen) closeAccordion(toggleBtn, content);
+          else openAccordion(toggleBtn, content);
+        };
+
+        toggles.forEach((btn) => btn.addEventListener("click", () => onToggle(btn)));
+
+        showPage(0);
       });
     </script>
   </body>
