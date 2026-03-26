@@ -190,6 +190,8 @@
     font-weight: 500;
     transition: transform var(--transition-fast), filter var(--transition-fast);
     box-shadow: var(--shadow-2);
+    border: none;
+    cursor: pointer;
   }
   
   .resume-btn:hover {
@@ -397,9 +399,19 @@
     pointer-events: none;
   }
   
+  .education-card h4 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
   .education-card span {
     opacity: 0.78;
     font-size: 13px;
+  }
+  
+  .education-card p {
+    font-size: 11px;
+    margin-top: 4px;
   }
   
   /* ============================================================================
@@ -1368,6 +1380,10 @@
     border-color: rgba(59, 130, 246, 0.5);
   }
   
+  .play-icon {
+    display: inline-block;
+  }
+  
   .video-progress {
     flex: 1;
     height: 4px;
@@ -1828,9 +1844,8 @@
   }
   
   /* ============================================================================
-     INFRASTRUCTURE BOXES (3-COLUMN LAYOUT)
+     INFRASTRUCTURE BOXES
      ============================================================================ */
-  
   .infrastructure-box {
     border-radius: var(--radius-lg);
     border: 1px solid var(--border);
@@ -1848,7 +1863,6 @@
   /* ============================================================================
      DASHBOARD PREVIEW BUTTON
      ============================================================================ */
-  
   .dashboard-preview-btn {
     appearance: none;
     border: none;
@@ -1876,7 +1890,7 @@
   }
   
   /* ============================================================================
-     RESPONSIVE DESIGN
+     RESPONSIVE DESIGN - DESKTOP
      ============================================================================ */
   @media (max-width: 900px) {
     :root {
@@ -1981,100 +1995,89 @@
     }
   }
   
-  @media (max-width: 600px) {
-    .skills-tags {
-      gap: 6px;
+  /* ============================================================================
+     RESPONSIVE DESIGN - TABLET
+     ============================================================================ */
+  @media (max-width: 900px) and (min-width: 601px) {
+    :root {
+      --pad-page-y: 30px;
+      --pad-page-x: 20px;
     }
   
-    .skills-tags span {
-      padding: 6px 10px;
-      font-size: 12px;
+    .navbar {
+      padding: 14px 20px;
     }
   
-    .contact-tile {
-      grid-template-columns: 40px 1fr;
+    .nav-links {
+      display: flex;
+      gap: 20px;
     }
   
-    .tile-icon {
+    .about-screen {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  
+    .outcomes {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .project-tablet--featured {
+      grid-column: 1;
+    }
+  
+    .skills-cards {
+      grid-template-columns: 1fr;
+    }
+  
+    .flow-board {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .dashboards-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .award-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .case-metrics-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .arrow {
       width: 40px;
-      height: 40px;
-      font-size: 16px;
+      height: 60px;
+      font-size: 20px;
+      margin: 0 16px;
     }
   
-    .tile-cta {
-      display: none;
+    .page-indicator {
+      bottom: 60px;
     }
   
-    .project-tablet {
-      min-height: auto;
+    .case-study-wrapper {
+      padding: 30px 20px;
     }
   
-    .video-controls {
-      padding: 8px;
-      gap: 6px;
-    }
-  
-    .video-play-btn {
-      width: 28px;
-      height: 28px;
-      font-size: 12px;
-    }
-  
-    .video-time {
-      font-size: 11px;
-      min-width: 45px;
-    }
-  
-    .video-container video {
-      height: 160px;
-    }
-  
-    .tablet-actions--centered .btn-link--primary {
-      min-width: 180px;
+    .case-study-title {
+      font-size: 36px;
     }
   }
   
-  @media (prefers-reduced-motion: reduce) {
-    * {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-    }
-  
-    .page {
-      transition: none;
-    }
-  
-    .experience-content {
-      transition: none;
-    }
-  
-    .flow-connector::before {
-      animation: none;
-    }
-  }
-  
-  @media print {
-    .navbar,
-    .nav-arrows,
-    .page-indicator,
-    .site-footer {
-      display: none;
-    }
-  
-    .page {
-      position: static;
-      opacity: 1;
-      transform: none;
-      page-break-inside: avoid;
-    }
-  }
-
-/* ============================================================================
-   MOBILE OPTIMIZATION (320px - 600px)
-   ============================================================================ */
-
-   @media (max-width: 600px) {
+  /* ============================================================================
+     RESPONSIVE DESIGN - MOBILE (320px - 600px)
+     ============================================================================ */
+  @media (max-width: 600px) {
     :root {
       --pad-page-y: 20px;
       --pad-page-x: 16px;
@@ -2681,91 +2684,9 @@
   }
   
   /* ============================================================================
-     TABLET OPTIMIZATION (601px - 900px)
-     ============================================================================ */
-  
-  @media (max-width: 900px) and (min-width: 601px) {
-    :root {
-      --pad-page-y: 30px;
-      --pad-page-x: 20px;
-    }
-  
-    .navbar {
-      padding: 14px 20px;
-    }
-  
-    .nav-links {
-      display: flex;
-      gap: 20px;
-    }
-  
-    .about-screen {
-      grid-template-columns: 1fr;
-      gap: 40px;
-    }
-  
-    .outcomes {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .projects-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .project-tablet--featured {
-      grid-column: 1;
-    }
-  
-    .skills-cards {
-      grid-template-columns: 1fr;
-    }
-  
-    .flow-board {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .dashboards-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .contact-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .award-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .case-metrics-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .arrow {
-      width: 40px;
-      height: 60px;
-      font-size: 20px;
-      margin: 0 16px;
-    }
-  
-    .page-indicator {
-      bottom: 60px;
-    }
-  
-    .case-study-wrapper {
-      padding: 30px 20px;
-    }
-  
-    .case-study-title {
-      font-size: 36px;
-    }
-  }
-  
-  /* ============================================================================
      TOUCH-FRIENDLY ENHANCEMENTS
      ============================================================================ */
-  
   @media (hover: none) and (pointer: coarse) {
-    /* Touch devices - enlarge tap targets */
     .btn-link,
     .nav-btn,
     .dot-page,
@@ -2775,7 +2696,6 @@
       min-width: 48px;
     }
   
-    /* Remove hover effects on touch devices */
     .btn-link:hover {
       transform: none;
     }
@@ -2788,7 +2708,6 @@
       transform: none;
     }
   
-    /* Disable hover states */
     .skills-tags span:hover {
       transform: none;
     }
@@ -2805,7 +2724,6 @@
   /* ============================================================================
      LANDSCAPE MODE (Mobile)
      ============================================================================ */
-  
   @media (max-height: 500px) and (orientation: landscape) {
     .page {
       min-height: auto;
@@ -2846,9 +2764,27 @@
   /* ============================================================================
      HIGH DPI / RETINA SCREENS
      ============================================================================ */
-  
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     img {
       image-rendering: -webkit-optimize-contrast;
     }
-  }  
+  }
+  
+  /* ============================================================================
+     PRINT STYLES
+     ============================================================================ */
+  @media print {
+    .navbar,
+    .nav-arrows,
+    .page-indicator,
+    .site-footer {
+      display: none;
+    }
+  
+    .page {
+      position: static;
+      opacity: 1;
+      transform: none;
+      page-break-inside: avoid;
+    }
+  }
