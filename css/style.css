@@ -1811,7 +1811,7 @@
   }
   
   /* ============================================================================
-     PAGE INDICATOR (DOTS)
+     PAGE INDICATOR (DOTS) - OPTIMIZED FOR MOBILE
      ============================================================================ */
   .page-indicator {
     position: fixed;
@@ -1819,8 +1819,12 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 10px;
+    gap: 8px;
     z-index: 110;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 999px;
+    backdrop-filter: blur(8px);
   }
   
   .dot-page {
@@ -1830,17 +1834,19 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #475569;
+    background: rgba(71, 85, 105, 0.6);
     cursor: pointer;
     transition: background var(--transition-fast), transform var(--transition-fast);
   }
   
   .dot-page:hover {
     transform: scale(1.15);
+    background: rgba(96, 165, 250, 0.8);
   }
   
   .dot-page.active {
     background: var(--accent);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
   }
   
   /* ============================================================================
@@ -1890,113 +1896,7 @@
   }
   
   /* ============================================================================
-     RESPONSIVE DESIGN - DESKTOP
-     ============================================================================ */
-  @media (max-width: 900px) {
-    :root {
-      --pad-page-y: 30px;
-      --pad-page-x: 18px;
-    }
-  
-    .navbar {
-      padding: 14px 16px;
-    }
-  
-    .nav-links {
-      display: none;
-    }
-  
-    .page {
-      padding: var(--pad-page-y) var(--pad-page-x);
-    }
-  
-    .about-screen {
-      grid-template-columns: 1fr;
-      text-align: center;
-      gap: 40px;
-    }
-  
-    .about-left p {
-      margin: 0 auto;
-    }
-  
-    .outcomes {
-      grid-template-columns: 1fr;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  
-    .about-image {
-      width: 210px;
-      height: 210px;
-    }
-  
-    .skills-cards {
-      grid-template-columns: 1fr;
-    }
-  
-    .flow-board {
-      grid-template-columns: 1fr;
-    }
-  
-    .flow-board--with-arrows .flow-stage:not(:last-child)::after {
-      content: '';
-    }
-  
-    .flow-connectors {
-      grid-template-columns: 1fr;
-    }
-  
-    .projects-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .project-tablet--featured {
-      grid-column: 1;
-    }
-  
-    .dashboard-preview-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .dashboards-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .award-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .contact-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .arrow {
-      margin: 0 10px;
-      width: 42px;
-      height: 64px;
-    }
-  
-    .page-indicator {
-      bottom: 62px;
-    }
-  
-    .case-study-wrapper {
-      padding: 30px 18px;
-    }
-  
-    .case-study-title {
-      font-size: 32px;
-    }
-  
-    .case-metrics-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  /* ============================================================================
-     RESPONSIVE DESIGN - TABLET
+     RESPONSIVE DESIGN - TABLET (601px - 900px)
      ============================================================================ */
   @media (max-width: 900px) and (min-width: 601px) {
     :root {
@@ -2063,6 +1963,19 @@
   
     .page-indicator {
       bottom: 60px;
+      gap: 7px;
+      padding: 7px 11px;
+      background: rgba(0, 0, 0, 0.28);
+    }
+  
+    .dot-page {
+      width: 9px;
+      height: 9px;
+      background: rgba(71, 85, 105, 0.55);
+    }
+  
+    .dot-page.active {
+      background: rgba(59, 130, 246, 0.85);
     }
   
     .case-study-wrapper {
@@ -2509,15 +2422,27 @@
       display: none;
     }
   
-    /* PAGE INDICATOR */
+    /* PAGE INDICATOR - MOBILE OPTIMIZED */
     .page-indicator {
       bottom: 70px;
-      gap: 8px;
+      gap: 6px;
+      padding: 6px 10px;
+      background: rgba(0, 0, 0, 0.25);
     }
   
     .dot-page {
       width: 8px;
       height: 8px;
+      background: rgba(71, 85, 105, 0.5);
+    }
+  
+    .dot-page:hover {
+      background: rgba(96, 165, 250, 0.7);
+    }
+  
+    .dot-page.active {
+      background: rgba(59, 130, 246, 0.9);
+      box-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
     }
   
     /* IMAGE MODAL */
@@ -2754,6 +2679,13 @@
   
     .page-indicator {
       bottom: 50px;
+      gap: 5px;
+      padding: 4px 8px;
+    }
+  
+    .dot-page {
+      width: 7px;
+      height: 7px;
     }
   
     .nav-arrows {
