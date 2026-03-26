@@ -2069,3 +2069,786 @@
       page-break-inside: avoid;
     }
   }
+
+/* ============================================================================
+   MOBILE OPTIMIZATION (320px - 600px)
+   ============================================================================ */
+
+   @media (max-width: 600px) {
+    :root {
+      --pad-page-y: 20px;
+      --pad-page-x: 16px;
+    }
+  
+    /* NAVBAR */
+    .navbar {
+      padding: 12px 16px;
+      gap: 10px;
+    }
+  
+    .logo__hello {
+      font-size: 10px;
+    }
+  
+    .logo__name {
+      font-size: 16px;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .resume-btn {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+  
+    /* ABOUT PAGE */
+    .about-screen {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  
+    .about-left h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+  
+    .about-left h3 {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+  
+    .about-left p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  
+    .outcomes {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      max-width: 100%;
+      margin-top: 16px;
+    }
+  
+    .outcome {
+      padding: 10px;
+      border-radius: 8px;
+    }
+  
+    .outcome__value {
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+  
+    .outcome__label {
+      font-size: 11px;
+    }
+  
+    .skills-tags {
+      gap: 6px;
+      margin-top: 12px;
+    }
+  
+    .skills-tags span {
+      padding: 6px 10px;
+      font-size: 11px;
+      border-radius: 6px;
+    }
+  
+    .mini-heading {
+      font-size: 12px;
+      margin-top: 14px;
+    }
+  
+    .about-right {
+      gap: 14px;
+    }
+  
+    .about-image {
+      width: 200px;
+      height: 200px;
+      border: 3px solid rgba(59, 130, 246, 0.9);
+    }
+  
+    .education-card {
+      width: 100%;
+      padding: 14px;
+    }
+  
+    .education-card h4 {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+  
+    .education-card span {
+      font-size: 12px;
+    }
+  
+    .education-card p {
+      font-size: 11px;
+      margin-top: 4px;
+    }
+  
+    /* SECTIONS */
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+  
+    .section-subhead {
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+  
+    /* EXPERIENCE CARD */
+    .experience-header {
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+      padding: 14px 16px;
+    }
+  
+    .card-title {
+      font-size: 14px;
+    }
+  
+    .role-pill {
+      font-size: 11px;
+      padding: 4px 8px;
+    }
+  
+    .expand-icon {
+      font-size: 16px;
+    }
+  
+    .experience-content {
+      padding: 0 16px;
+    }
+  
+    .role-subtitle {
+      font-size: 12px;
+      margin-top: 12px;
+      margin-bottom: 6px;
+    }
+  
+    .impact-list li {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+  
+    /* SKILLS CARDS */
+    .skills-cards {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .skill-card {
+      padding: 10px;
+    }
+  
+    .skill-card__title {
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+  
+    .skill-card__list li {
+      font-size: 11px;
+      margin-bottom: 4px;
+    }
+  
+    /* FLOW BOARD */
+    .flow-board {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .flow-stage {
+      min-height: auto;
+      padding: 10px;
+    }
+  
+    .flow-stage__head {
+      font-size: 10px;
+      margin-bottom: 8px;
+    }
+  
+    .flow-node {
+      padding: 10px;
+      margin-bottom: 8px;
+    }
+  
+    .flow-node__title {
+      font-size: 13px;
+    }
+  
+    .flow-node__meta {
+      font-size: 11px;
+    }
+  
+    .flow-connectors {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 0 3px;
+    }
+  
+    /* PROJECTS GRID */
+    .projects-grid {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+  
+    .project-tablet {
+      min-height: auto;
+      box-shadow: 0 0 0 1px rgba(2, 6, 23, 0.25) inset;
+    }
+  
+    .project-tablet--featured {
+      grid-column: 1;
+      min-height: auto;
+    }
+  
+    .project-badge {
+      font-size: 10px;
+      padding: 4px 6px;
+      left: 4px;
+      top: 4px;
+    }
+  
+    .tablet-top {
+      padding: 8px 12px 6px 12px;
+      gap: 8px;
+    }
+  
+    .tablet-title {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+  
+    .tablet-pill {
+      font-size: 10px;
+      padding: 4px 8px;
+    }
+  
+    .tablet-block {
+      padding: 8px 12px;
+    }
+  
+    .tablet-block:first-of-type {
+      padding: 8px 12px;
+    }
+  
+    .tablet-h {
+      font-size: 11px;
+      margin-bottom: 4px;
+    }
+  
+    .tablet-p {
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  
+    .tablet-list {
+      margin-left: 16px;
+      margin-top: 6px;
+    }
+  
+    .tablet-list li {
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+  
+    .project-subtitle {
+      font-size: 12px;
+      margin: 10px 0 4px 0;
+      padding: 0 12px;
+    }
+  
+    .tablet-actions {
+      padding: 10px 12px 12px 12px;
+      gap: 8px;
+    }
+  
+    .tablet-actions--centered {
+      gap: 10px;
+    }
+  
+    .tablet-actions--centered .btn-link {
+      min-width: 120px;
+      font-size: 11px;
+      padding: 10px 12px;
+    }
+  
+    .tablet-actions--centered .btn-link--primary {
+      min-width: 140px;
+    }
+  
+    /* DASHBOARD PREVIEW */
+    .dashboard-preview-grid {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .dashboard-preview-item img {
+      height: 150px;
+    }
+  
+    .dashboard-preview-label {
+      padding: 6px;
+      font-size: 10px;
+    }
+  
+    /* VIDEO */
+    .video-container {
+      border-radius: 8px;
+    }
+  
+    .video-container video {
+      height: 160px;
+    }
+  
+    .video-controls {
+      padding: 8px;
+      gap: 6px;
+    }
+  
+    .video-play-btn {
+      width: 28px;
+      height: 28px;
+      font-size: 12px;
+      border-radius: 4px;
+    }
+  
+    .video-time {
+      font-size: 10px;
+      min-width: 40px;
+    }
+  
+    .media-card {
+      border-radius: 8px;
+    }
+  
+    .media-card-label {
+      padding: 8px;
+      font-size: 11px;
+    }
+  
+    /* AWARDS */
+    .award-grid {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      max-width: 100%;
+    }
+  
+    .award-card {
+      padding: 12px;
+    }
+  
+    .award-card h4 {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+  
+    .award-card p {
+      font-size: 12px;
+    }
+  
+    /* CONTACT GRID */
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .contact-tile {
+      grid-template-columns: 40px 1fr;
+      gap: 12px;
+      padding: 12px;
+      border-radius: 10px;
+      min-height: 50px;
+    }
+  
+    .tile-icon {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+      border-radius: 8px;
+    }
+  
+    .tile-title {
+      font-size: 11px;
+    }
+  
+    .tile-value {
+      font-size: 13px;
+      font-weight: 500;
+    }
+  
+    .tile-cta {
+      display: none;
+    }
+  
+    /* FOOTER */
+    .site-footer {
+      position: relative;
+    }
+  
+    .footer-inner {
+      padding: 12px;
+      font-size: 12px;
+      gap: 8px 10px;
+    }
+  
+    .footer-label {
+      font-size: 11px;
+    }
+  
+    /* NAVIGATION ARROWS */
+    .nav-arrows {
+      display: none;
+    }
+  
+    /* PAGE INDICATOR */
+    .page-indicator {
+      bottom: 70px;
+      gap: 8px;
+    }
+  
+    .dot-page {
+      width: 8px;
+      height: 8px;
+    }
+  
+    /* IMAGE MODAL */
+    .image-modal {
+      padding: 16px;
+    }
+  
+    .image-modal-content {
+      width: min(95vw, 100%);
+      max-height: 80vh;
+    }
+  
+    .image-modal-content img {
+      border-radius: 8px;
+      max-height: 80vh;
+    }
+  
+    .image-modal-close {
+      top: -36px;
+      font-size: 28px;
+    }
+  
+    /* CASE STUDY PAGE */
+    .case-study-wrapper {
+      padding: 20px 16px;
+    }
+  
+    .case-study-title {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+  
+    .case-study-subtitle {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  
+    .case-study-section {
+      margin-bottom: 28px;
+    }
+  
+    .case-study-section h2 {
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+  
+    .case-study-h3 {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  
+    .case-study-highlight {
+      padding: 14px;
+      margin: 12px 0;
+    }
+  
+    .case-study-highlight p {
+      font-size: 13px;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+  
+    .case-metrics-grid {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+  
+    .dashboards-grid {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+  
+    .dashboard-tile__img img {
+      height: 180px;
+    }
+  
+    .dashboard-tile__body {
+      padding: 12px;
+    }
+  
+    .dashboard-tile__body h3 {
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+  
+    .dashboard-audience {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+  
+    .dashboard-tile__body li {
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+  
+    .infrastructure-box {
+      border-radius: 10px;
+    }
+  
+    .dashboard-preview-btn img {
+      height: 160px;
+    }
+  
+    /* BUTTONS */
+    .btn-link {
+      padding: 10px 12px;
+      font-size: 11px;
+      border-radius: 8px;
+    }
+  
+    .case-study-footer {
+      margin-top: 30px;
+      padding-top: 20px;
+    }
+  
+    /* QUOTE CARD */
+    .quote-card {
+      padding: 12px 12px 10px;
+      margin-top: 12px;
+    }
+  
+    .quote-mark {
+      font-size: 28px;
+    }
+  
+    .quote-text {
+      font-size: 12px;
+    }
+  
+    .quote-meta {
+      font-size: 11px;
+      margin-top: 6px;
+    }
+  
+    /* INITIATIVES CHIPS */
+    .initiatives-chips {
+      gap: 8px;
+    }
+  
+    .chip {
+      font-size: 11px;
+      padding: 6px 10px;
+    }
+  
+    /* SKILLS PANEL */
+    .skills-panel {
+      padding: 12px;
+      margin-top: 12px;
+    }
+  
+    .skills-panel__head {
+      gap: 8px;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+    }
+  
+    .skills-panel__title {
+      font-size: 14px;
+    }
+  
+    .skills-panel__subtitle {
+      font-size: 11px;
+    }
+  }
+  
+  /* ============================================================================
+     TABLET OPTIMIZATION (601px - 900px)
+     ============================================================================ */
+  
+  @media (max-width: 900px) and (min-width: 601px) {
+    :root {
+      --pad-page-y: 30px;
+      --pad-page-x: 20px;
+    }
+  
+    .navbar {
+      padding: 14px 20px;
+    }
+  
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .about-screen {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  
+    .outcomes {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .project-tablet--featured {
+      grid-column: 1;
+    }
+  
+    .skills-cards {
+      grid-template-columns: 1fr;
+    }
+  
+    .flow-board {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .dashboards-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .award-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .case-metrics-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .arrow {
+      width: 40px;
+      height: 60px;
+      font-size: 20px;
+      margin: 0 16px;
+    }
+  
+    .page-indicator {
+      bottom: 60px;
+    }
+  
+    .case-study-wrapper {
+      padding: 30px 20px;
+    }
+  
+    .case-study-title {
+      font-size: 36px;
+    }
+  }
+  
+  /* ============================================================================
+     TOUCH-FRIENDLY ENHANCEMENTS
+     ============================================================================ */
+  
+  @media (hover: none) and (pointer: coarse) {
+    /* Touch devices - enlarge tap targets */
+    .btn-link,
+    .nav-btn,
+    .dot-page,
+    .contact-tile,
+    .video-play-btn {
+      min-height: 48px;
+      min-width: 48px;
+    }
+  
+    /* Remove hover effects on touch devices */
+    .btn-link:hover {
+      transform: none;
+    }
+  
+    .skill-card:hover {
+      transform: none;
+    }
+  
+    .project-tablet:hover {
+      transform: none;
+    }
+  
+    /* Disable hover states */
+    .skills-tags span:hover {
+      transform: none;
+    }
+  
+    .award-card:hover {
+      transform: none;
+    }
+  
+    .dashboard-tile:hover {
+      transform: none;
+    }
+  }
+  
+  /* ============================================================================
+     LANDSCAPE MODE (Mobile)
+     ============================================================================ */
+  
+  @media (max-height: 500px) and (orientation: landscape) {
+    .page {
+      min-height: auto;
+      padding: 12px 16px;
+    }
+  
+    .about-screen {
+      gap: 20px;
+    }
+  
+    .about-left h1 {
+      font-size: 28px;
+    }
+  
+    .about-image {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .education-card {
+      padding: 10px;
+    }
+  
+    .outcomes {
+      gap: 8px;
+      margin-top: 12px;
+    }
+  
+    .page-indicator {
+      bottom: 50px;
+    }
+  
+    .nav-arrows {
+      display: none;
+    }
+  }
+  
+  /* ============================================================================
+     HIGH DPI / RETINA SCREENS
+     ============================================================================ */
+  
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    img {
+      image-rendering: -webkit-optimize-contrast;
+    }
+  }  

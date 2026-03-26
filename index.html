@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Jayavardhan Premnath | Data Engineer Portfolio</title>
 
     <meta
@@ -10,6 +10,9 @@
       content="Jayavardhan Premnath — Data Engineer. Builds CI/CD data pipelines and cloud analytics on AWS; delivers BI dashboards using Python, SQL, and Power BI."
     />
     <meta name="theme-color" content="#0f172a" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
     <link rel="canonical" href="https://jayavardhan22.github.io/jayavardhan-portfolio/" />
 
@@ -77,7 +80,7 @@
     </nav>
 
     <main class="page-wrapper" id="main">
-      <!-- PAGE 1 -->
+      <!-- PAGE 1: ABOUT -->
       <section class="page active" id="page1" aria-label="About">
         <div class="about-screen">
           <div class="about-left">
@@ -92,15 +95,15 @@
             <div class="outcomes" aria-label="Key outcomes">
               <div class="outcome">
                 <div class="outcome__value">20+</div>
-                <div class="outcome__label">Dashboards delivered & maintained</div>
+                <div class="outcome__label">Dashboards</div>
               </div>
               <div class="outcome">
                 <div class="outcome__value">15+</div>
-                <div class="outcome__label">CI/CD pipelines deployed</div>
+                <div class="outcome__label">CI/CD Pipelines</div>
               </div>
               <div class="outcome">
-                <div class="outcome__value">AWS Data Stack</div>
-                <div class="outcome__label">Lambda · S3 · DynamoDB · CodePipeline</div>
+                <div class="outcome__value">AWS Stack</div>
+                <div class="outcome__label">Lambda · S3 · DynamoDB</div>
               </div>
             </div>
 
@@ -109,19 +112,12 @@
               <div class="skills-tags" aria-label="Technical skills">
                 <span>Python</span>
                 <span>SQL</span>
-                <span>AWS (Lambda, S3, DynamoDB, EC2)</span>
-                <span>CodePipeline</span>
+                <span>AWS</span>
                 <span>BigQuery</span>
                 <span>Power BI</span>
                 <span>Tableau</span>
                 <span>Qlik Sense</span>
-                <span>Databricks</span>
-                <span>PySpark</span>
                 <span>Git</span>
-                <span>Bitbucket</span>
-                <span>API Integration</span>
-                <span>Machine Learning</span>
-                <span>R</span>
               </div>
             </div>
           </div>
@@ -136,28 +132,28 @@
                   alt="Profile image of Jayavardhan Premnath"
                   loading="eager"
                   decoding="async"
-                  width="320"
-                  height="320"
+                  width="260"
+                  height="260"
                 />
               </picture>
             </div>
 
             <div class="education-card">
               <h4>MSc Data Analytics</h4>
-              <span>Dublin Business School · Dublin, Ireland</span>
+              <span>Dublin Business School</span>
               <p>Jan 2026</p>
             </div>
 
             <div class="education-card">
-              <h4>Bachelor of Computer Applications (BCA)</h4>
-              <span>Ramaiah College of Arts, Science and Commerce · Bangalore, India</span>
+              <h4>Bachelor of Computer Applications</h4>
+              <span>Ramaiah College</span>
               <p>Sep 2022</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- PAGE 2 -->
+      <!-- PAGE 2: EXPERIENCE -->
       <section class="page" id="page2" aria-label="Experience and Skills" aria-hidden="true" inert>
         <div class="section">
           <div class="section-head">
@@ -167,13 +163,12 @@
           <div class="skills-panel skills-panel--full" aria-label="Tech stack summary">
             <div class="skills-panel__head">
               <h3 class="skills-panel__title">Tech Stack</h3>
-              <p class="skills-panel__subtitle">Primary production tools</p>
+              <p class="skills-panel__subtitle">Production tools</p>
             </div>
             <div class="skills-tags" aria-label="Primary tech stack">
               <span>AWS Lambda</span>
               <span>S3</span>
               <span>DynamoDB</span>
-              <span>CodePipeline</span>
               <span>BigQuery</span>
               <span>Python</span>
               <span>SQL</span>
@@ -191,8 +186,8 @@
                 aria-expanded="false"
                 data-target="experienceContent-1"
               >
-                <span class="card-title">Reach — Data Engineer (Engineer 1)</span>
-                <span class="role-pill" aria-label="Role dates">Dec 2022 – Sep 2024</span>
+                <span class="card-title">Reach — Data Engineer</span>
+                <span class="role-pill">Dec 2022 – Sep 2024</span>
                 <span class="expand-icon" aria-hidden="true">+</span>
               </button>
 
@@ -201,8 +196,7 @@
 
                 <div class="company-callout" aria-label="Company overview">
                   <p class="company-intro">
-                    Cloud-native telecom SaaS enabling MVNO/broadband/IoT services. Supports high-volume data processing and
-                    real-time analytics for operational insights and reporting.
+                    Cloud-native telecom SaaS enabling MVNO/broadband/IoT services.
                   </p>
                 </div>
 
@@ -210,42 +204,23 @@
                   <span class="env-pill">AWS Lambda</span>
                   <span class="env-pill">S3</span>
                   <span class="env-pill">DynamoDB</span>
-                  <span class="env-pill">CodePipeline</span>
                   <span class="env-pill">BigQuery</span>
                   <span class="env-pill">Power BI</span>
-                  <span class="env-pill">Python</span>
-                  <span class="env-pill">SQL</span>
                 </div>
 
-                <h4 class="role-subtitle">Key Contributions (Impact)</h4>
+                <h4 class="role-subtitle">Key Contributions</h4>
                 <ul class="impact-list">
-                  <li>
-                    Built CI/CD ETL pipelines on AWS (Lambda, DynamoDB, S3, CodePipeline) processing
-                    <strong>500K+ records/day</strong> and publishing curated datasets for dashboards.
-                  </li>
-                  <li>
-                    Delivered and maintained <strong>20+ dashboards</strong> (Power BI + Qlik Sense), reducing manual reporting from
-                    <strong>10 hours → 2 hours/week</strong> (80% time savings).
-                  </li>
-                  <li>
-                    Integrated HubSpot + BigQuery sources via Python (AWS Lambda), improving dataset completeness by
-                    <strong>45%</strong> and enabling automated customer success reporting.
-                  </li>
-                  <li>
-                    Improved data freshness from <strong>4 hours → 15 minutes</strong> using triggers + scheduled
-                    refresh and gateway configuration in Power BI.
-                  </li>
-                  <li>
-                    Reduced pipeline failures by <strong>60%</strong> by adding validations, retry logic, and operational fixes across
-                    deployed CI/CD workflows.
-                  </li>
+                  <li>Built CI/CD ETL pipelines processing <strong>500K+ records/day</strong></li>
+                  <li>Delivered <strong>20+ dashboards</strong>, reducing manual reporting by <strong>80%</strong></li>
+                  <li>Improved data freshness from <strong>4 hours → 15 minutes</strong></li>
+                  <li>Reduced pipeline failures by <strong>60%</strong></li>
                 </ul>
 
                 <h4 class="role-subtitle">Key Initiatives</h4>
                 <div class="initiatives-chips initiatives-chips--prominent" role="list" aria-label="Key initiatives">
-                  <span class="chip" role="listitem">Power BI Integration Ownership</span>
-                  <span class="chip" role="listitem">Pipeline Stabilization & Fixes</span>
-                  <span class="chip" role="listitem">Client Dashboards & Enhancements</span>
+                  <span class="chip" role="listitem">Power BI Integration</span>
+                  <span class="chip" role="listitem">Pipeline Stabilization</span>
+                  <span class="chip" role="listitem">Client Dashboards</span>
                 </div>
               </div>
             </div>
@@ -253,7 +228,7 @@
             <div class="skills-panel skills-panel--full" aria-label="Core skills">
               <div class="skills-panel__head">
                 <h3 class="skills-panel__title">Core Skills</h3>
-                <p class="skills-panel__subtitle">Keywords recruiters scan for</p>
+                <p class="skills-panel__subtitle">Key competencies</p>
               </div>
 
               <div class="skills-cards" role="list" aria-label="Skill groups">
@@ -261,9 +236,8 @@
                   <div class="skill-card__title">Data Engineering</div>
                   <ul class="skill-card__list">
                     <li>ETL pipeline development</li>
-                    <li>CI/CD deployment (AWS CodePipeline)</li>
-                    <li>Data modeling & dataset curation</li>
-                    <li>Data quality & optimization</li>
+                    <li>CI/CD deployment</li>
+                    <li>Data modeling</li>
                   </ul>
                 </div>
 
@@ -271,13 +245,8 @@
                   <div class="skill-card__title">Cloud & Tools</div>
                   <div class="skills-tags" aria-label="Cloud and tools">
                     <span>AWS Lambda</span>
-                    <span>S3</span>
-                    <span>DynamoDB</span>
-                    <span>EC2</span>
                     <span>BigQuery</span>
-                    <span>Databricks</span>
                     <span>Git</span>
-                    <span>Bitbucket</span>
                   </div>
                 </div>
 
@@ -288,7 +257,6 @@
                     <span>Tableau</span>
                     <span>Qlik Sense</span>
                   </div>
-                  <div class="skill-card__hint">Dashboards, KPIs, refresh, gateway config</div>
                 </div>
 
                 <div class="skill-card" role="listitem">
@@ -297,28 +265,17 @@
                     <span>Python</span>
                     <span>SQL</span>
                     <span>PySpark</span>
-                    <span>R</span>
                   </div>
                 </div>
-              </div>
-
-              <div class="skills-footer">
-                <div class="skills-footer__title">Collaboration</div>
-                <ul class="skills-footer__list">
-                  <li>Stakeholder engagement</li>
-                  <li>Cross-functional collaboration</li>
-                  <li>Agile/Scrum delivery</li>
-                </ul>
               </div>
             </div>
 
             <div class="quote-card" aria-label="LinkedIn recommendation excerpt">
               <div class="quote-mark" aria-hidden="true">"</div>
               <p class="quote-text">
-                Jayavardhan demonstrated exceptional dashboarding and data analysis skills, delivering valuable insights from complex
-                datasets and performing strongly under tight deadlines.
+                Jayavardhan demonstrated exceptional dashboarding and data analysis skills, delivering valuable insights from complex datasets.
               </p>
-              <p class="quote-meta">— Harish Naik, Senior MIS Analyst, Reach Mobile (LinkedIn). More recommendations on LinkedIn.</p>
+              <p class="quote-meta">— Harish Naik, Reach Mobile</p>
             </div>
           </div>
 
@@ -330,15 +287,12 @@
                 <div class="flow-stage__head">Sources</div>
                 <div class="flow-node">
                   <div class="flow-node__title">BigQuery</div>
-                  <div class="flow-node__meta">Source (usage data)</div>
                 </div>
                 <div class="flow-node">
                   <div class="flow-node__title">HubSpot</div>
-                  <div class="flow-node__meta">Source (customer interactions)</div>
                 </div>
                 <div class="flow-node">
                   <div class="flow-node__title">DynamoDB</div>
-                  <div class="flow-node__meta">Source (operational data)</div>
                 </div>
               </div>
 
@@ -346,7 +300,6 @@
                 <div class="flow-stage__head">Processing</div>
                 <div class="flow-node flow-node--accent">
                   <div class="flow-node__title">AWS Lambda</div>
-                  <div class="flow-node__meta">Python transforms</div>
                 </div>
               </div>
 
@@ -354,7 +307,6 @@
                 <div class="flow-stage__head">Storage</div>
                 <div class="flow-node">
                   <div class="flow-node__title">S3 Bucket</div>
-                  <div class="flow-node__meta">Processed storage</div>
                 </div>
               </div>
 
@@ -362,80 +314,69 @@
                 <div class="flow-stage__head">Dashboards</div>
                 <div class="flow-node">
                   <div class="flow-node__title">Power BI</div>
-                  <div class="flow-node__meta">Analytics dashboards</div>
                 </div>
                 <div class="flow-node">
                   <div class="flow-node__title">Qlik Sense</div>
-                  <div class="flow-node__meta">Analytics dashboards</div>
                 </div>
               </div>
-            </div>
-
-            <div class="flow-connectors" aria-hidden="true">
-              <div class="flow-connector"><span class="flow-connector__label">Extract</span></div>
-              <div class="flow-connector"><span class="flow-connector__label">Transform</span></div>
-              <div class="flow-connector"><span class="flow-connector__label">Publish</span></div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- PAGE 3 -->
+      <!-- PAGE 3: PROJECTS -->
       <section class="page" id="page3" aria-label="Projects" aria-hidden="true" inert>
         <div class="section">
           <div class="section-head">
             <h2>Projects</h2>
-            <p class="section-subhead">Featured end-to-end data engineering and analytics work.</p>
+            <p class="section-subhead">Featured work</p>
           </div>
 
           <div class="projects-grid" aria-label="Projects list">
-            <!-- PROJECT 1: GitHub Intelligence (FEATURED) -->
-            <article class="project-tablet project-tablet--featured" aria-label="GitHub Intelligence Dashboard — featured case study">
+            <!-- PROJECT 1 -->
+            <article class="project-tablet project-tablet--featured" aria-label="GitHub Intelligence Dashboard">
               <div class="project-badge project-badge--1">Featured</div>
 
               <div class="tablet-top">
                 <h3 class="tablet-title">GitHub Intelligence Dashboard</h3>
-                <div class="tablet-pill tablet-pill--featured">Data Engineering</div>
+                <div class="tablet-pill tablet-pill--featured">Data Eng</div>
               </div>
 
               <div class="tablet-block">
-                <h4 class="tablet-h">Business Challenge</h4>
-                <p class="tablet-p">No unified view of Big 5 tech companies' open-source investment strategies. Competitive analysis was scattered across repos with no historical tracking.</p>
+                <h4 class="tablet-h">Challenge</h4>
+                <p class="tablet-p">No unified view of Big 5 tech companies' open-source strategies.</p>
               </div>
 
               <div class="tablet-block">
-                <h4 class="tablet-h">Solution Delivered</h4>
+                <h4 class="tablet-h">Solution</h4>
                 <ul class="tablet-list">
-                  <li><strong>Automated ETL:</strong> GitHub API → Python → BigQuery daily (zero manual steps)</li>
-                  <li><strong>40+ repositories</strong> tracked with <strong>35+ metrics</strong> per repo</li>
-                  <li><strong>4 Power BI dashboards</strong> for 4 distinct audiences</li>
+                  <li><strong>Automated ETL</strong> via GitHub Actions</li>
+                  <li><strong>40+ repositories</strong> tracked</li>
+                  <li><strong>4 Power BI dashboards</strong></li>
                 </ul>
               </div>
 
               <div class="tablet-block">
-                <h4 class="tablet-h">Real-World Impact</h4>
-                <p class="tablet-p">
-                  <strong>2.7M+ stars analyzed</strong> across <strong>5 companies</strong> | <strong>&lt;15 min</strong> end-to-end runtime | <strong>2,000+ rows/day</strong> processed | <strong>99.9% uptime SLA</strong>
-                </p>
+                <h4 class="tablet-h">Impact</h4>
+                <p class="tablet-p"><strong>2.7M+ stars</strong> analyzed | <strong>&lt;15 min</strong> runtime | <strong>99.9% uptime</strong></p>
               </div>
 
-              <h4 class="project-subtitle">Tech Stack</h4>
+              <h4 class="project-subtitle">Stack</h4>
               <div class="skills-tags">
                 <span>Python</span>
                 <span>GitHub Actions</span>
                 <span>BigQuery</span>
                 <span>Power BI</span>
-                <span>SQL</span>
               </div>
 
               <div class="tablet-actions tablet-actions--centered">
                 <a class="btn-link" href="https://github.com/jayavardhan22/github-repo-insights-pipeline" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a class="btn-link btn-link--primary" href="projects/github-intelligence.html?from=projects">View Case Study →</a>
+                <a class="btn-link btn-link--primary" href="projects/github-intelligence.html?from=projects">Case Study →</a>
               </div>
             </article>
 
-            <!-- PROJECT 2: Airline Operations Dashboard -->
-            <article class="project-tablet" aria-label="Airline Operations Dashboard project">
+            <!-- PROJECT 2 -->
+            <article class="project-tablet" aria-label="Airline Operations Dashboard">
               <div class="project-badge project-badge--2">Project 2</div>
 
               <div class="tablet-top">
@@ -444,25 +385,25 @@
               </div>
 
               <div class="tablet-block">
-                <h4 class="tablet-h">Business Challenge</h4>
-                <p class="tablet-p">Operations teams lacked real-time visibility into flight performance. Manual reporting consumed significant time, delaying critical decisions on delays and cancellations.</p>
+                <h4 class="tablet-h">Challenge</h4>
+                <p class="tablet-p">Manual reporting delayed critical flight performance decisions.</p>
               </div>
 
               <div class="tablet-block">
-                <h4 class="tablet-h">Solution Delivered</h4>
+                <h4 class="tablet-h">Solution</h4>
                 <ul class="tablet-list">
-                  <li><strong>Dual dashboards:</strong> Power BI + Tableau tested to evaluate optimal analytics tool for deployment</li>
-                  <li><strong>Real-time refresh</strong> with on-time performance, delay, and cancellation tracking</li>
-                  <li><strong>15 KPIs centralized</strong> in one platform with drill-down capabilities</li>
+                  <li><strong>Power BI + Tableau</strong> evaluation</li>
+                  <li><strong>15 KPIs</strong> centralized</li>
+                  <li><strong>Real-time refresh</strong></li>
                 </ul>
               </div>
 
               <div class="tablet-block">
-                <h4 class="tablet-h">Real-World Impact</h4>
-                <p class="tablet-p"><strong>Reduced reporting cycles</strong> from daily manual updates to <strong>real-time dashboards</strong> | <strong>15 KPIs</strong> standardized across teams | <strong>99.2% data accuracy</strong></p>
+                <h4 class="tablet-h">Impact</h4>
+                <p class="tablet-p"><strong>Real-time dashboards</strong> | <strong>99.2% accuracy</strong></p>
               </div>
 
-              <h4 class="project-subtitle">Tech Stack</h4>
+              <h4 class="project-subtitle">Stack</h4>
               <div class="skills-tags">
                 <span>Power BI</span>
                 <span>Tableau</span>
@@ -473,75 +414,67 @@
                 <div class="dashboard-preview-item">
                   <img
                     src="assets/images/airline-powerbi.jpeg"
-                    alt="Power BI airline operations dashboard - executive overview"
+                    alt="Power BI dashboard"
                     loading="lazy"
                     class="clickable-image"
                     onclick="openImageModal(this)"
                   />
-                  <div class="dashboard-preview-label"><strong>Power BI</strong><br />Executive overview</div>
+                  <div class="dashboard-preview-label"><strong>Power BI</strong></div>
                 </div>
                 <div class="dashboard-preview-item">
                   <img
                     src="assets/images/airline-tableau.jpeg"
-                    alt="Tableau airline operations dashboard - operational detail"
+                    alt="Tableau dashboard"
                     loading="lazy"
                     class="clickable-image"
                     onclick="openImageModal(this)"
                   />
-                  <div class="dashboard-preview-label"><strong>Tableau</strong><br />Operational detail</div>
+                  <div class="dashboard-preview-label"><strong>Tableau</strong></div>
                 </div>
               </div>
 
               <div class="tablet-actions">
-                <a
-                  class="btn-link"
-                  href="https://github.com/jayavardhan22/Airline-Operations-Dashboard"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
+                <a class="btn-link" href="https://github.com/jayavardhan22/Airline-Operations-Dashboard" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </article>
 
-            <!-- PROJECT 3: Traffic Collision Data Quality -->
-            <article class="project-tablet" aria-label="Traffic Collision Data Quality project">
+            <!-- PROJECT 3 -->
+            <article class="project-tablet" aria-label="Traffic Data Quality">
               <div class="project-badge project-badge--3">Project 3</div>
 
               <div class="tablet-top">
-                <h3 class="tablet-title">Traffic Collision Data Quality</h3>
-                <div class="tablet-pill tablet-pill--dq">Data Quality</div>
+                <h3 class="tablet-title">Traffic Data Quality</h3>
+                <div class="tablet-pill tablet-pill--dq">ML / Data Quality</div>
               </div>
 
               <div class="tablet-block">
-                <h4 class="tablet-h">Business Challenge</h4>
-                <p class="tablet-p">Large public traffic datasets had 35% missing fields and logical inconsistencies, preventing reliable analytics and ML model training.</p>
+                <h4 class="tablet-h">Challenge</h4>
+                <p class="tablet-p">35% missing fields prevented reliable ML model training.</p>
               </div>
 
               <div class="tablet-block">
-                <h4 class="tablet-h">Solution Delivered</h4>
+                <h4 class="tablet-h">Solution</h4>
                 <ul class="tablet-list">
-                  <li><strong>Hybrid ML framework:</strong> Isolation Forest, LOF, and DBSCAN anomaly detection</li>
-                  <li><strong>Rule-based validation:</strong> Deterministic checks for auditable results</li>
-                  <li><strong>Automated flagging:</strong> Transparent issue identification with explainable logic</li>
+                  <li><strong>Hybrid ML framework</strong></li>
+                  <li><strong>Anomaly detection</strong> (Isolation Forest, LOF, DBSCAN)</li>
+                  <li><strong>Rule-based validation</strong></li>
                 </ul>
               </div>
 
               <div class="tablet-block">
-                <h4 class="tablet-h">Real-World Impact</h4>
-                <p class="tablet-p"><strong>Validation coverage: 92%</strong> | <strong>28% anomalies detected</strong> | <strong>88.5% precision on edge cases</strong> | <strong>Production-ready framework</strong></p>
+                <h4 class="tablet-h">Impact</h4>
+                <p class="tablet-p"><strong>92% coverage</strong> | <strong>28% anomalies detected</strong> | <strong>88.5% precision</strong></p>
               </div>
 
-              <h4 class="project-subtitle">Tech Stack</h4>
+              <h4 class="project-subtitle">Stack</h4>
               <div class="skills-tags">
                 <span>Python</span>
                 <span>Scikit-learn</span>
                 <span>Pandas</span>
                 <span>Streamlit</span>
-                <span>SQL</span>
               </div>
 
-              <h4 class="project-subtitle">Video Preview</h4>
+              <h4 class="project-subtitle">Demo Video</h4>
               <div class="media-card">
                 <div class="video-container">
                   <video
@@ -565,44 +498,34 @@
                     <span class="video-time"><span class="current-time">0:00</span> / <span class="duration">0:00</span></span>
                   </div>
                 </div>
-                <div class="media-card-label">
-                  <strong>Project Demo</strong>
-                </div>
               </div>
 
               <div class="tablet-actions">
-                <a
-                  class="btn-link"
-                  href="https://github.com/jayavardhan22/A_Machine_Learning_and_Rule-Based_Approach_for_Data_Quality_Validation/tree/main"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
+                <a class="btn-link" href="https://github.com/jayavardhan22/A_Machine_Learning_and_Rule-Based_Approach_for_Data_Quality_Validation/tree/main" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </article>
           </div>
 
-          <h2 class="section-title">Awards & Achievements</h2>
+          <h2 class="section-title">Awards</h2>
           <div class="award-grid" aria-label="Awards">
             <div class="award-card">
               <h4>🏆 Rookie-Rockstar</h4>
-              <p>Awarded for delivering critical MVNO projects ahead of schedule.</p>
+              <p>Critical MVNO projects delivered ahead of schedule.</p>
             </div>
             <div class="award-card">
               <h4>⭐ Employee of the Month</h4>
-              <p>Awarded for high-impact delivery and consistent execution in client work.</p>
+              <p>High-impact delivery and consistent execution.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- PAGE 4 -->
+      <!-- PAGE 4: CONTACT -->
       <section class="page" id="page4" aria-label="Contact" aria-hidden="true" inert>
         <div class="section">
           <div class="section-head">
             <h2>Contact</h2>
-            <p class="section-subhead">Open to internship and full-time opportunities in Data Engineering / Analytics Engineering.</p>
+            <p class="section-subhead">Open to internship & full-time opportunities</p>
           </div>
 
           <div class="contact-grid" aria-label="Contact methods">
@@ -612,71 +535,46 @@
                 <div class="tile-title">Email</div>
                 <div class="tile-value">jayavardhanp2204@gmail.com</div>
               </div>
-              <div class="tile-cta" aria-hidden="true">Open</div>
             </a>
 
             <a class="contact-tile" href="tel:+353892484461" aria-label="Call Irish number">
               <div class="tile-icon" aria-hidden="true">☎</div>
               <div class="tile-content">
-                <div class="tile-title">Phone (Ireland)</div>
+                <div class="tile-title">Phone (IE)</div>
                 <div class="tile-value">+353 892 484 461</div>
               </div>
-              <div class="tile-cta" aria-hidden="true">Call</div>
             </a>
 
             <a class="contact-tile" href="tel:+917406165884" aria-label="Call Indian number">
               <div class="tile-icon" aria-hidden="true">☎</div>
               <div class="tile-content">
-                <div class="tile-title">Phone (India)</div>
+                <div class="tile-title">Phone (IN)</div>
                 <div class="tile-value">+91 74061 65884</div>
               </div>
-              <div class="tile-cta" aria-hidden="true">Call</div>
             </a>
 
-            <a
-              class="contact-tile"
-              href="https://www.linkedin.com/in/jayavardhan-premnath-a7293b237/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Open LinkedIn"
-            >
+            <a class="contact-tile" href="https://www.linkedin.com/in/jayavardhan-premnath-a7293b237/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn">
               <div class="tile-icon" aria-hidden="true">in</div>
               <div class="tile-content">
                 <div class="tile-title">LinkedIn</div>
                 <div class="tile-value">jayavardhan-premnath</div>
               </div>
-              <div class="tile-cta" aria-hidden="true">Open</div>
             </a>
 
-            <a
-              class="contact-tile"
-              href="https://github.com/jayavardhan22"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Open GitHub"
-            >
+            <a class="contact-tile" href="https://github.com/jayavardhan22" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub">
               <div class="tile-icon" aria-hidden="true">⌂</div>
               <div class="tile-content">
                 <div class="tile-title">GitHub</div>
                 <div class="tile-value">jayavardhan22</div>
               </div>
-              <div class="tile-cta" aria-hidden="true">Open</div>
             </a>
 
-            <a
-              class="contact-tile contact-tile--resume"
-              href="resume/Jayavardhan-Premnath-Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Open Jayavardhan Premnath Resume (PDF)"
-              title="Jayavardhan Premnath Resume"
-            >
+            <a class="contact-tile contact-tile--resume" href="resume/Jayavardhan-Premnath-Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Resume (PDF)">
               <div class="tile-icon" aria-hidden="true">⤓</div>
               <div class="tile-content">
                 <div class="tile-title">Resume</div>
-                <div class="tile-value">Jayavardhan Premnath</div>
+                <div class="tile-value">Download PDF</div>
               </div>
-              <div class="tile-cta" aria-hidden="true">Open</div>
             </a>
           </div>
         </div>
@@ -693,14 +591,11 @@
 
     <footer class="site-footer" aria-label="Footer links">
       <div class="footer-inner">
-        <span class="footer-label">👤 Connect:</span>
+        <span class="footer-label">👤</span>
         <a href="mailto:jayavardhanp2204@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/jayavardhan-premnath-a7293b237/" target="_blank" rel="noopener noreferrer">
-          LinkedIn
-        </a>
+        <a href="https://www.linkedin.com/in/jayavardhan-premnath-a7293b237/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/jayavardhan22" target="_blank" rel="noopener noreferrer">GitHub</a>
         <span style="opacity: 0.5;">|</span>
-        <span class="footer-label">📄 Docs:</span>
         <a href="resume/Jayavardhan-Premnath-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
       </div>
     </footer>
@@ -718,7 +613,6 @@
     </div>
 
     <script>
-      // ===== IMAGE MODAL FUNCTIONS =====
       function openImageModal(imgElement) {
         const modal = document.getElementById("imageModal");
         const modalImg = document.getElementById("modalImage");
@@ -738,7 +632,6 @@
         if (e.target === this) closeImageModal();
       });
 
-      // ===== VIDEO PLAYBACK FUNCTIONS =====
       function toggleVideoPlayback(event) {
         event.preventDefault();
         const video = document.getElementById("project3-video");
@@ -775,7 +668,6 @@
         }
       }
 
-      // ===== VIDEO EVENT LISTENERS =====
       document.addEventListener("DOMContentLoaded", () => {
         const video = document.getElementById("project3-video");
         
@@ -788,12 +680,8 @@
             document.querySelector(".play-icon").textContent = "▶";
           });
         }
-      });
 
-      // ===== PAGE NAVIGATION =====
-      document.addEventListener("DOMContentLoaded", () => {
         let currentPage = 0;
-
         const pages = Array.from(document.querySelectorAll(".page"));
         const dots = Array.from(document.querySelectorAll(".dot-page"));
         const navButtons = Array.from(document.querySelectorAll(".nav-btn"));
@@ -807,8 +695,6 @@
         const updateArrowVisibility = () => {
           prevBtn.classList.toggle("is-hidden", currentPage === 0);
           nextBtn.classList.toggle("is-hidden", currentPage === pages.length - 1);
-          prevBtn.setAttribute("aria-disabled", String(currentPage === 0));
-          nextBtn.setAttribute("aria-disabled", String(currentPage === pages.length - 1));
         };
 
         const setPageState = (activeIndex) => {
@@ -821,12 +707,9 @@
           });
 
           dots.forEach((dot, i) => dot.classList.toggle("active", i === activeIndex));
-
           navButtons.forEach((btn) => {
             const isActive = Number(btn.dataset.page) === activeIndex;
             btn.classList.toggle("active", isActive);
-            if (isActive) btn.setAttribute("aria-current", "page");
-            else btn.removeAttribute("aria-current");
           });
 
           currentPage = activeIndex;
@@ -850,37 +733,11 @@
         });
 
         document.addEventListener("keydown", (e) => {
-          const tag = e.target?.tagName?.toLowerCase?.() || "";
-          const isFormField = ["input", "textarea", "select"].includes(tag);
-          if (isFormField) return;
-          if (e.altKey || e.ctrlKey || e.metaKey) return;
           if (e.key === "ArrowRight") nextBtn.click();
           if (e.key === "ArrowLeft") prevBtn.click();
         });
 
         const toggles = Array.from(document.querySelectorAll(".js-accordion-toggle"));
-
-        const openAccordion = (toggleBtn, content) => {
-          content.hidden = false;
-          content.classList.add("show");
-          content.style.maxHeight = content.scrollHeight + "px";
-          content.style.paddingTop = "20px";
-          content.style.paddingBottom = "20px";
-          toggleBtn.setAttribute("aria-expanded", "true");
-          const icon = toggleBtn.querySelector(".expand-icon");
-          if (icon) icon.textContent = "−";
-        };
-
-        const closeAccordion = (toggleBtn, content) => {
-          content.classList.remove("show");
-          content.style.maxHeight = "0px";
-          content.style.paddingTop = "0px";
-          content.style.paddingBottom = "0px";
-          toggleBtn.setAttribute("aria-expanded", "false");
-          const icon = toggleBtn.querySelector(".expand-icon");
-          if (icon) icon.textContent = "+";
-          window.setTimeout(() => (content.hidden = true), 250);
-        };
 
         toggles.forEach((toggleBtn) => {
           toggleBtn.addEventListener("click", () => {
@@ -888,19 +745,29 @@
             const content = document.getElementById(targetId);
             if (!content) return;
             const isOpen = toggleBtn.getAttribute("aria-expanded") === "true";
-            if (isOpen) closeAccordion(toggleBtn, content);
-            else openAccordion(toggleBtn, content);
+            if (isOpen) {
+              content.style.maxHeight = "0px";
+              content.style.paddingTop = "0px";
+              content.style.paddingBottom = "0px";
+              toggleBtn.setAttribute("aria-expanded", "false");
+              toggleBtn.querySelector(".expand-icon").textContent = "+";
+              setTimeout(() => content.hidden = true, 250);
+            } else {
+              content.hidden = false;
+              content.style.maxHeight = content.scrollHeight + "px";
+              content.style.paddingTop = "20px";
+              content.style.paddingBottom = "20px";
+              toggleBtn.setAttribute("aria-expanded", "true");
+              toggleBtn.querySelector(".expand-icon").textContent = "−";
+            }
           });
         });
 
         showPage(currentPage);
       });
 
-      // Close modals on Escape
       document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") {
-          closeImageModal();
-        }
+        if (e.key === "Escape") closeImageModal();
       });
     </script>
   </body>
