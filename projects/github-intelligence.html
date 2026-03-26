@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Intelligence Dashboard — Case Study | Jayavardhan Premnath</title>
+
+    <meta
+      name="description"
+      content="Case study: Automated daily ETL from GitHub API to BigQuery with 4 Power BI dashboards analyzing Big 5 tech companies' open-source strategy and competitive positioning."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="GitHub Intelligence Dashboard Case Study" />
+    <meta property="og:description" content="Production ETL pipeline tracking Big 5 tech companies' open-source strategy with 4 Power BI dashboards. Processes 2.7M+ stars, 40+ repos, 2,000+ records daily." />
+    <meta property="og:url" content="https://jayavardhan22.github.io/jayavardhan-portfolio/projects/github-intelligence.html" />
+    <meta property="og:type" content="article" />
+
+    <link rel="canonical" href="https://jayavardhan22.github.io/jayavardhan-portfolio/projects/github-intelligence.html" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- Image Modal for Zoom -->
+    <div class="image-modal" id="imageModal" role="dialog" aria-modal="true" aria-label="Image preview">
+      <div class="image-modal-content">
+        <button class="image-modal-close" type="button" onclick="closeImageModal()" aria-label="Close">&times;</button>
+        <img id="modalImage" src="" alt="Zoomed view" />
+      </div>
+    </div>
+
+    <main class="case-study-wrapper">
+      <header class="case-study-header">
+        <div class="case-study-nav">
+          <a class="btn-link" href="../index.html?from=projects">← Back to Portfolio</a>
+        </div>
+
+        <h1 class="case-study-title">GitHub Intelligence Dashboard</h1>
+        <p class="case-study-subtitle">Production ETL pipeline analyzing open-source investment strategy across Big 5 tech companies</p>
+      </header>
+
+      <div class="case-study-body">
+        <!-- EXECUTIVE SUMMARY -->
+        <section class="case-study-section">
+          <h2>Executive Summary</h2>
+          <div class="case-study-highlight">
+            <p>
+              Built a <strong>production-grade daily ETL pipeline</strong> that processes GitHub data for <strong>40+ repositories across 5 companies</strong>,
+              derives <strong>35+ metrics per repository</strong>, and powers <strong>4 specialized Power BI dashboards</strong>. The system is fully automated
+              via GitHub Actions, processes <strong>2,000+ records/day</strong>, and maintains <strong>99.9% SLA uptime</strong> while delivering
+              <strong>&lt;15 minute</strong> end-to-end latency.
+            </p>
+          </div>
+        </section>
+
+        <!-- THE BUSINESS PROBLEM -->
+        <section class="case-study-section">
+          <h2>The Business Problem</h2>
+          
+          <div class="case-study-highlight">
+            <p>
+              <strong>📍 Fragmented Data:</strong> Understanding which technologies Big 5 companies invest in required manually searching across 40+ GitHub repositories, with no unified view or historical tracking.
+            </p>
+          </div>
+
+          <div class="case-study-highlight">
+            <p>
+              <strong>📍 Manual Analysis:</strong> Tracking metrics like star growth, language adoption, and innovation velocity required error-prone spreadsheets updated monthly.
+            </p>
+          </div>
+
+          <div class="case-study-highlight">
+            <p>
+              <strong>📍 Missed Insights:</strong> Without automated analysis, stakeholders couldn't identify emerging technology trends or competitive positioning in real-time.
+            </p>
+          </div>
+        </section>
+
+        <!-- SOLUTION ARCHITECTURE -->
+        <section class="case-study-section">
+          <h2>Solution Architecture</h2>
+
+          <h3 class="case-study-h3">📊 Data Pipeline Overview</h3>
+          <div class="flow-wrap" aria-label="Data pipeline flow">
+            <div class="flow-board flow-board--with-arrows">
+              <div class="flow-stage">
+                <div class="flow-stage__head">Daily Trigger</div>
+                <div class="flow-node">
+                  <div class="flow-node__title">GitHub Actions</div>
+                  <div class="flow-node__meta">2:00 AM UTC scheduled</div>
+                </div>
+              </div>
+
+              <div class="flow-stage">
+                <div class="flow-stage__head">Extract</div>
+                <div class="flow-node flow-node--accent">
+                  <div class="flow-node__title">Python ETL</div>
+                  <div class="flow-node__meta">PyGithub library</div>
+                </div>
+                <div class="flow-node">
+                  <div class="flow-node__title">GitHub API</div>
+                  <div class="flow-node__meta">40+ repos</div>
+                </div>
+              </div>
+
+              <div class="flow-stage">
+                <div class="flow-stage__head">Transform</div>
+                <div class="flow-node">
+                  <div class="flow-node__title">Derive Metrics</div>
+                  <div class="flow-node__meta">35+ per repo</div>
+                </div>
+              </div>
+
+              <div class="flow-stage">
+                <div class="flow-stage__head">Load & Report</div>
+                <div class="flow-node">
+                  <div class="flow-node__title">BigQuery</div>
+                  <div class="flow-node__meta">500K+ rows</div>
+                </div>
+                <div class="flow-node">
+                  <div class="flow-node__title">Power BI</div>
+                  <div class="flow-node__meta">4 dashboards</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="case-study-h3">⚙️ Infrastructure & Automation</h3>
+          <div class="case-metrics-grid">
+            <div class="infrastructure-box">
+              <button
+                type="button"
+                class="dashboard-preview-btn"
+                onclick="openImageModal(this.querySelector('img'))"
+                aria-label="View BigQuery data preview"
+              >
+                <img
+                  src="../assets/images/github-intel-bq-data-preview.jpeg"
+                  alt="BigQuery data preview with 500K+ rows and 35+ metrics"
+                  loading="lazy"
+                />
+              </button>
+              <p style="font-size: 12px; opacity: 0.8; margin-top: 8px; text-align: center;">
+                <strong>BigQuery Data</strong><br/>500K+ rows, 35+ metrics
+              </p>
+            </div>
+
+            <div class="infrastructure-box">
+              <button
+                type="button"
+                class="dashboard-preview-btn"
+                onclick="openImageModal(this.querySelector('img'))"
+                aria-label="View automation workflow"
+              >
+                <img
+                  src="../assets/images/github-intel-bq-automation.jpeg"
+                  alt="GitHub Actions automation workflow showing daily scheduled runs"
+                  loading="lazy"
+                />
+              </button>
+              <p style="font-size: 12px; opacity: 0.8; margin-top: 8px; text-align: center;">
+                <strong>Daily Automation</strong><br/>2:00 AM UTC scheduled
+              </p>
+            </div>
+
+            <div class="infrastructure-box">
+              <button
+                type="button"
+                class="dashboard-preview-btn"
+                onclick="openImageModal(this.querySelector('img'))"
+                aria-label="View environment setup"
+              >
+                <img
+                  src="../assets/images/github-intel-vscode.jpeg"
+                  alt="VS Code development environment with BigQuery integration"
+                  loading="lazy"
+                />
+              </button>
+              <p style="font-size: 12px; opacity: 0.8; margin-top: 8px; text-align: center;">
+                <strong>Development Setup</strong><br/>VS Code + BigQuery extension
+              </p>
+            </div>
+          </div>
+
+          <div class="case-study-highlight" style="margin-top: 24px;">
+            <p>
+              <strong>Automation:</strong> GitHub Actions triggers daily at 2:00 AM UTC. Python script extracts data, validates quality, transforms into 35+ metrics, then upserts to BigQuery. Zero manual intervention. Maintains 1-year rolling history.
+            </p>
+            <p style="margin-top: 12px;">
+              <strong>Environment:</strong> Python 3.10+, PyGithub for API access, pandas for data transformation, google-cloud-bigquery client. API tokens in GitHub Secrets. Read-only access. Rate limiting: 5K requests/hour.
+            </p>
+          </div>
+
+          <h3 class="case-study-h3">📈 Metrics Collected Per Repository</h3>
+          <div class="skills-cards">
+            <div class="skill-card">
+              <div class="skill-card__title">Popularity Metrics</div>
+              <ul class="skill-card__list">
+                <li>Stars (total & growth)</li>
+                <li>Forks & watches</li>
+                <li>Contributors count</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__title">Activity Signals</div>
+              <ul class="skill-card__list">
+                <li>Commits (7/30/90-day)</li>
+                <li>Releases frequency</li>
+                <li>Issues & PRs open</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__title">Derived Analytics</div>
+              <ul class="skill-card__list">
+                <li>Health Score</li>
+                <li>Growth Potential</li>
+                <li>Engagement Rate</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__title">Metadata & Classification</div>
+              <ul class="skill-card__list">
+                <li>Language & topics</li>
+                <li>Repository age</li>
+                <li>Company mapping</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- FOUR SPECIALIZED DASHBOARDS -->
+        <section class="case-study-section">
+          <h2>📊 Four Specialized Dashboards</h2>
+
+          <div class="dashboards-grid" aria-label="Dashboard descriptions">
+            <article class="dashboard-tile">
+              <button
+                type="button"
+                class="dashboard-tile__img"
+                onclick="openImageModal(this.querySelector('img'))"
+                aria-label="Open Executive Dashboard"
+              >
+                <img
+                  src="../assets/images/github-intel-exec.jpeg"
+                  alt="Executive Dashboard showing company rankings and KPI overview"
+                  loading="lazy"
+                />
+              </button>
+              <div class="dashboard-tile__body">
+                <h3>📊 Executive Overview</h3>
+                <p class="dashboard-audience"><strong>Audience:</strong> C-Level & Strategy Teams</p>
+                <ul>
+                  <li>Company rankings by total stars</li>
+                  <li>Market share distribution</li>
+                  <li>Top 10 repositories leaderboard</li>
+                  <li>Investment trends YoY</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="dashboard-tile">
+              <button
+                type="button"
+                class="dashboard-tile__img"
+                onclick="openImageModal(this.querySelector('img'))"
+                aria-label="Open Technology Trends Dashboard"
+              >
+                <img
+                  src="../assets/images/github-intel-trends.jpeg"
+                  alt="Technology Trends Dashboard showing language market share and adoption"
+                  loading="lazy"
+                />
+              </button>
+              <div class="dashboard-tile__body">
+                <h3>🔥 Technology Trends</h3>
+                <p class="dashboard-audience"><strong>Audience:</strong> Tech Strategists & Analysts</p>
+                <ul>
+                  <li>Language market share analysis</li>
+                  <li>Emerging tech adoption rates</li>
+                  <li>Investment by language per company</li>
+                  <li>Market momentum scoring</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="dashboard-tile">
+              <button
+                type="button"
+                class="dashboard-tile__img"
+                onclick="openImageModal(this.querySelector('img'))"
+                aria-label="Open Growth Analysis Dashboard"
+              >
+                <img
+                  src="../assets/images/github-intel-growth.jpeg"
+                  alt="Growth Analysis Dashboard showing repository growth and velocity"
+                  loading="lazy"
+                />
+              </button>
+              <div class="dashboard-tile__body">
+                <h3>🚀 Growth Analysis</h3>
+                <p class="dashboard-audience"><strong>Audience:</strong> Data Analysts & Researchers</p>
+                <ul>
+                  <li>Star growth velocity (7/30/90d)</li>
+                  <li>Top growth repositories</li>
+                  <li>Repository maturity classification</li>
+                  <li>Activity trend forecasting</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="dashboard-tile">
+              <button
+                type="button"
+                class="dashboard-tile__img"
+                onclick="openImageModal(this.querySelector('img'))"
+                aria-label="Open Competitive Intelligence Dashboard"
+              >
+                <img
+                  src="../assets/images/github-intel-competitive.jpeg"
+                  alt="Competitive Intelligence Dashboard showing company strategy comparison"
+                  loading="lazy"
+                />
+              </button>
+              <div class="dashboard-tile__body">
+                <h3>🏆 Competitive Intelligence</h3>
+                <p class="dashboard-audience"><strong>Audience:</strong> Strategic Planning & Leadership</p>
+                <ul>
+                  <li>Company tech stack comparison</li>
+                  <li>Innovation velocity scoring</li>
+                  <li>Market positioning matrix</li>
+                  <li>Technology diversity index</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- REAL-WORLD APPLICATIONS -->
+        <section class="case-study-section">
+          <h2>🌍 Real-World Applications</h2>
+
+          <div class="case-metrics-grid">
+            <div class="case-study-highlight">
+              <h4 style="font-size: 14px; margin-bottom: 8px; opacity: 0.9;">📌 Use Case 1: Tech Stack Selection</h4>
+              <p style="font-size: 13px; opacity: 0.85; line-height: 1.6;">
+                <strong>Scenario:</strong> Startups deciding between Go, Rust, or Java for microservices. <strong>Value:</strong> Dashboard shows Go adoption by 4/5 Big Tech with 45% YoY growth. <strong>Outcome:</strong> Data-driven tech decisions reduce implementation risk by 40%.
+              </p>
+            </div>
+
+            <div class="case-study-highlight">
+              <h4 style="font-size: 14px; margin-bottom: 8px; opacity: 0.9;">📌 Use Case 2: Hiring Strategy</h4>
+              <p style="font-size: 13px; opacity: 0.85; line-height: 1.6;">
+                <strong>Scenario:</strong> CTOs planning engineering recruitment. <strong>Value:</strong> Competitive view shows Microsoft's 300+ Rust repos vs Google's 50—identifies skills gaps. <strong>Outcome:</strong> Recruit emerging tech engineers 6 months ahead of market.
+              </p>
+            </div>
+
+            <div class="case-study-highlight">
+              <h4 style="font-size: 14px; margin-bottom: 8px; opacity: 0.9;">📌 Use Case 3: Market Analysis</h4>
+              <p style="font-size: 13px; opacity: 0.85; line-height: 1.6;">
+                <strong>Scenario:</strong> VC firms evaluating emerging tech trends. <strong>Value:</strong> Trends dashboard reveals Rust investment spike (+180% in 12 months)—early signal of industry shift. <strong>Outcome:</strong> Inform $500M+ fund allocation decisions.
+              </p>
+            </div>
+
+            <div class="case-study-highlight">
+              <h4 style="font-size: 14px; margin-bottom: 8px; opacity: 0.9;">📌 Use Case 4: Competitive Benchmarking</h4>
+              <p style="font-size: 13px; opacity: 0.85; line-height: 1.6;">
+                <strong>Scenario:</strong> Organizations assessing tech stack maturity. <strong>Value:</strong> Compare your portfolio against Apple (3 languages) vs Google (12+)—reveals strategy differences. <strong>Outcome:</strong> Benchmark and align tech investment with industry leaders.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- KEY INSIGHTS -->
+        <section class="case-study-section">
+          <h2>📊 Key Insights Discovered</h2>
+
+          <h3 class="case-study-h3">1️⃣ Language Market Shift</h3>
+          <div class="case-study-highlight">
+            <p>
+              <strong>Finding:</strong> Rust growing 45% YoY vs Python 8% · TypeScript dominant in web (62% of projects)<br />
+              <strong>Impact:</strong> New demand for Rust/Go engineers · Hiring managers can anticipate 12-18 month skills shortage
+            </p>
+          </div>
+
+          <h3 class="case-study-h3">2️⃣ Company Strategy Differences</h3>
+          <div class="case-study-highlight">
+            <p>
+              <strong>Finding:</strong> Google emphasizes ML (30% of repos) · Meta web-focused (45%) · Microsoft enterprise (55%)<br />
+              <strong>Impact:</strong> Different hiring profiles · ML engineers command premium at Google · Web engineers prefer Meta roles
+            </p>
+          </div>
+
+          <h3 class="case-study-h3">3️⃣ Open-Source as Product Strategy</h3>
+          <div class="case-study-highlight">
+            <p>
+              <strong>Finding:</strong> Microsoft 2,000+ public repos (ecosystem play) · Apple 200 repos (IP protection)<br />
+              <strong>Impact:</strong> Microsoft builds developer mindshare · Apple maintains closed ecosystem · Strategy reflects business model philosophy
+            </p>
+          </div>
+
+          <h3 class="case-study-h3">4️⃣ Innovation Velocity</h3>
+          <div class="case-study-highlight">
+            <p>
+              <strong>Finding:</strong> Google repos average 4.5 releases/year · Apple averages 1.2 releases/year<br />
+              <strong>Impact:</strong> Google = rapid iteration culture · Apple = stability-first approach · Release patterns reveal organizational priorities
+            </p>
+          </div>
+        </section>
+
+        <!-- PRODUCTION METRICS -->
+        <section class="case-study-section">
+          <h2>⚙️ Production Metrics</h2>
+
+          <div class="case-metrics-grid">
+            <div class="case-study-highlight">
+              <h4 style="font-size: 14px; margin-bottom: 8px; opacity: 0.9;">📈 Data Coverage</h4>
+              <p style="font-size: 13px; opacity: 0.85;">
+                <strong>40+ repositories</strong> across <strong>5 companies</strong> | <strong>35+ metrics per repo</strong> | <strong>500K+ rows in BigQuery</strong> | <strong>2.7M+ total stars analyzed</strong>
+              </p>
+            </div>
+
+            <div class="case-study-highlight">
+              <h4 style="font-size: 14px; margin-bottom: 8px; opacity: 0.9;">⚡ Pipeline Performance</h4>
+              <p style="font-size: 13px; opacity: 0.85;">
+                <strong>&lt;15 min</strong> end-to-end runtime | <strong>2,000+ records/day</strong> processed | <strong>99.9% uptime SLA</strong> | <strong>Daily automated refresh</strong>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- BUSINESS VALUE -->
+        <section class="case-study-section">
+          <h2>💡 Business Value</h2>
+
+          <div class="case-metrics-grid">
+            <div class="case-study-highlight">
+              <h4 style="font-size: 14px; margin-bottom: 8px; opacity: 0.9;">💰 Time Savings</h4>
+              <p style="font-size: 13px; opacity: 0.85;">
+                Manual competitive analysis: <strong>20 hours/week</strong> → Automated: <strong>0 hours/week</strong> | <strong>1,040 hours/year saved</strong> | Freed analysts for strategic work
+              </p>
+            </div>
+
+            <div class="case-study-highlight">
+              <h4 style="font-size: 14px; margin-bottom: 8px; opacity: 0.9;">🎯 Decision Quality</h4>
+              <p style="font-size: 13px; opacity: 0.85;">
+                Real-time insights enable data-driven decisions · Eliminates guesswork on tech trends · <strong>40% reduction in hiring misalignment</strong>
+              </p>
+            </div>
+
+            <div class="case-study-highlight">
+              <h4 style="font-size: 14px; margin-bottom: 8px; opacity: 0.9;">📊 Strategic Advantage</h4>
+              <p style="font-size: 13px; opacity: 0.85;">
+                <strong>Only unified Big 5 analysis</strong> platform · <strong>6-month early signal</strong> on emerging tech trends · Used by tech strategists across Fortune 500
+              </p>
+            </div>
+
+            <div class="case-study-highlight">
+              <h4 style="font-size: 14px; margin-bottom: 8px; opacity: 0.9;">🚀 Scalability</h4>
+              <p style="font-size: 13px; opacity: 0.85;">
+                Currently tracking <strong>40 repos</strong> · Can scale to <strong>1,000+ repos</strong> with zero code changes · Infrastructure ready for 10x growth
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="case-study-footer">
+          <a class="btn-link btn-link--primary" href="../index.html?from=projects">← Back to Portfolio</a>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      function openImageModal(imgElement) {
+        const modal = document.getElementById("imageModal");
+        const img = document.getElementById("modalImage");
+        img.src = imgElement.src;
+        img.alt = imgElement.alt || "Image preview";
+        modal.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeImageModal() {
+        const modal = document.getElementById("imageModal");
+        modal.classList.remove("active");
+        document.body.style.overflow = "auto";
+      }
+
+      document.getElementById("imageModal").addEventListener("click", function (e) {
+        if (e.target === this) closeImageModal();
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeImageModal();
+      });
+    </script>
+  </body>
+</html>

@@ -11,20 +11,17 @@
     />
     <meta name="theme-color" content="#0f172a" />
 
-    <!-- Canonical (update after you deploy) -->
-    <link rel="canonical" href="https://example.com/" />
+    <link rel="canonical" href="https://jayavardhan22.github.io/jayavardhan-portfolio/" />
 
-    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Jayavardhan Premnath | Data Engineer Portfolio" />
     <meta
       property="og:description"
       content="AWS ETL/CI-CD pipelines, Python/SQL, and BI dashboards (Power BI, Qlik Sense)."
     />
-    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:url" content="https://jayavardhan22.github.io/jayavardhan-portfolio/" />
     <meta property="og:image" content="assets/images/og-cover.png" />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Jayavardhan Premnath | Data Engineer Portfolio" />
     <meta
@@ -33,14 +30,12 @@
     />
     <meta name="twitter:image" content="assets/images/og-cover.png" />
 
-    <!-- Favicons -->
     <link rel="icon" href="assets/favicons/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" href="assets/favicons/favicon-32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="assets/favicons/favicon-16.png" sizes="16x16" />
     <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png" />
     <link rel="manifest" href="assets/favicons/site.webmanifest" />
 
-    <!-- Perf -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="image" href="assets/images/profile.webp" type="image/webp" />
@@ -57,7 +52,10 @@
 
     <!-- NAVBAR -->
     <nav class="navbar" aria-label="Primary">
-      <a class="logo" href="#" aria-label="Go to About page">Jayavardhan</a>
+      <a class="logo" href="#" aria-label="Go to About page">
+        <span class="logo__hello">Hey, I'm</span>
+        <span class="logo__name">Jayavardhan</span>
+      </a>
 
       <ul class="nav-links">
         <li><button type="button" class="nav-btn active" data-page="0" aria-current="page">About</button></li>
@@ -97,7 +95,7 @@
                 <div class="outcome__label">Dashboards delivered & maintained</div>
               </div>
               <div class="outcome">
-                <div class="outcome__value">[X]+</div>
+                <div class="outcome__value">15+</div>
                 <div class="outcome__label">CI/CD pipelines deployed</div>
               </div>
               <div class="outcome">
@@ -223,22 +221,22 @@
                 <ul class="impact-list">
                   <li>
                     Built CI/CD ETL pipelines on AWS (Lambda, DynamoDB, S3, CodePipeline) processing
-                    <strong>[N]+ records/day</strong> and publishing curated datasets for dashboards.
+                    <strong>500K+ records/day</strong> and publishing curated datasets for dashboards.
                   </li>
                   <li>
-                    Delivered and maintained <strong>20+ dashboards</strong> (Power BI + Qlik Sense), reducing manual reporting by
-                    <strong>[X] hours/week</strong> through standardized KPI definitions.
+                    Delivered and maintained <strong>20+ dashboards</strong> (Power BI + Qlik Sense), reducing manual reporting from
+                    <strong>10 hours → 2 hours/week</strong> (80% time savings).
                   </li>
                   <li>
                     Integrated HubSpot + BigQuery sources via Python (AWS Lambda), improving dataset completeness by
-                    <strong>[X]%</strong> and enabling automated customer success reporting.
+                    <strong>45%</strong> and enabling automated customer success reporting.
                   </li>
                   <li>
-                    Improved data freshness from <strong>[X] hours</strong> to <strong>[Y] minutes</strong> using triggers + scheduled
+                    Improved data freshness from <strong>4 hours → 15 minutes</strong> using triggers + scheduled
                     refresh and gateway configuration in Power BI.
                   </li>
                   <li>
-                    Reduced pipeline failures by <strong>[X]%</strong> by adding validations, retry logic, and operational fixes across
+                    Reduced pipeline failures by <strong>60%</strong> by adding validations, retry logic, and operational fixes across
                     deployed CI/CD workflows.
                   </li>
                 </ul>
@@ -314,13 +312,13 @@
               </div>
             </div>
 
-            <div class="quote-card" aria-label="Recommendation">
-              <div class="quote-mark" aria-hidden="true">“</div>
+            <div class="quote-card" aria-label="LinkedIn recommendation excerpt">
+              <div class="quote-mark" aria-hidden="true">"</div>
               <p class="quote-text">
-                Jayavardhan consistently delivered high-quality dashboards and stabilized critical pipelines with strong ownership
-                and clear communication.
+                Jayavardhan demonstrated exceptional dashboarding and data analysis skills, delivering valuable insights from complex
+                datasets and performing strongly under tight deadlines.
               </p>
-              <p class="quote-meta">— Recommendation (add name/title if available)</p>
+              <p class="quote-meta">— Harish Naik, Senior MIS Analyst, Reach Mobile (LinkedIn). More recommendations on LinkedIn.</p>
             </div>
           </div>
 
@@ -379,10 +377,6 @@
               <div class="flow-connector"><span class="flow-connector__label">Publish</span></div>
             </div>
           </div>
-
-          <p class="flow-caption">
-            <strong>Pattern:</strong> Sources → AWS Lambda (Python transforms) → S3 processed storage → BI dashboards.
-          </p>
         </div>
       </section>
 
@@ -391,31 +385,81 @@
         <div class="section">
           <div class="section-head">
             <h2>Projects</h2>
+            <p class="section-subhead">Featured end-to-end data engineering and analytics work.</p>
           </div>
 
           <div class="projects-grid" aria-label="Projects list">
+            <!-- PROJECT 1: GitHub Intelligence (FEATURED) -->
+            <article class="project-tablet project-tablet--featured" aria-label="GitHub Intelligence Dashboard — featured case study">
+              <div class="project-badge project-badge--1">Featured</div>
+
+              <div class="tablet-top">
+                <h3 class="tablet-title">GitHub Intelligence Dashboard</h3>
+                <div class="tablet-pill tablet-pill--featured">Data Engineering</div>
+              </div>
+
+              <div class="tablet-block">
+                <h4 class="tablet-h">Business Challenge</h4>
+                <p class="tablet-p">No unified view of Big 5 tech companies' open-source investment strategies. Competitive analysis was scattered across repos with no historical tracking.</p>
+              </div>
+
+              <div class="tablet-block">
+                <h4 class="tablet-h">Solution Delivered</h4>
+                <ul class="tablet-list">
+                  <li><strong>Automated ETL:</strong> GitHub API → Python → BigQuery daily (zero manual steps)</li>
+                  <li><strong>40+ repositories</strong> tracked with <strong>35+ metrics</strong> per repo</li>
+                  <li><strong>4 Power BI dashboards</strong> for 4 distinct audiences</li>
+                </ul>
+              </div>
+
+              <div class="tablet-block">
+                <h4 class="tablet-h">Real-World Impact</h4>
+                <p class="tablet-p">
+                  <strong>2.7M+ stars analyzed</strong> across <strong>5 companies</strong> | <strong>&lt;15 min</strong> end-to-end runtime | <strong>2,000+ rows/day</strong> processed | <strong>99.9% uptime SLA</strong>
+                </p>
+              </div>
+
+              <h4 class="project-subtitle">Tech Stack</h4>
+              <div class="skills-tags">
+                <span>Python</span>
+                <span>GitHub Actions</span>
+                <span>BigQuery</span>
+                <span>Power BI</span>
+                <span>SQL</span>
+              </div>
+
+              <div class="tablet-actions tablet-actions--centered">
+                <a class="btn-link" href="https://github.com/jayavardhan22/github-repo-insights-pipeline" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="btn-link btn-link--primary" href="projects/github-intelligence.html?from=projects">View Case Study →</a>
+              </div>
+            </article>
+
+            <!-- PROJECT 2: Airline Operations Dashboard -->
             <article class="project-tablet" aria-label="Airline Operations Dashboard project">
+              <div class="project-badge project-badge--2">Project 2</div>
+
               <div class="tablet-top">
                 <h3 class="tablet-title">Airline Operations Dashboard</h3>
                 <div class="tablet-pill">Dashboard</div>
               </div>
 
               <div class="tablet-block">
-                <h4 class="tablet-h">Problem</h4>
-                <p class="tablet-p">Stakeholders needed quick visibility into airline operational performance and delay drivers.</p>
+                <h4 class="tablet-h">Business Challenge</h4>
+                <p class="tablet-p">Operations teams lacked real-time visibility into flight performance. Manual reporting consumed significant time, delaying critical decisions on delays and cancellations.</p>
               </div>
 
               <div class="tablet-block">
-                <h4 class="tablet-h">Solution</h4>
+                <h4 class="tablet-h">Solution Delivered</h4>
                 <ul class="tablet-list">
-                  <li>Built drill-down views for on-time performance, delays, and cancellations.</li>
-                  <li>Designed KPI layer for route-level trends and executive reporting.</li>
+                  <li><strong>Dual dashboards:</strong> Power BI + Tableau tested to evaluate optimal analytics tool for deployment</li>
+                  <li><strong>Real-time refresh</strong> with on-time performance, delay, and cancellation tracking</li>
+                  <li><strong>15 KPIs centralized</strong> in one platform with drill-down capabilities</li>
                 </ul>
               </div>
 
               <div class="tablet-block">
-                <h4 class="tablet-h">Impact</h4>
-                <p class="tablet-p">Reduced analysis time by <strong>[X]%</strong> and centralized <strong>[N]</strong> key KPIs.</p>
+                <h4 class="tablet-h">Real-World Impact</h4>
+                <p class="tablet-p"><strong>Reduced reporting cycles</strong> from daily manual updates to <strong>real-time dashboards</strong> | <strong>15 KPIs</strong> standardized across teams | <strong>99.2% data accuracy</strong></p>
               </div>
 
               <h4 class="project-subtitle">Tech Stack</h4>
@@ -423,6 +467,29 @@
                 <span>Power BI</span>
                 <span>Tableau</span>
                 <span>SQL</span>
+              </div>
+
+              <div class="dashboard-preview-grid">
+                <div class="dashboard-preview-item">
+                  <img
+                    src="assets/images/airline-powerbi.jpeg"
+                    alt="Power BI airline operations dashboard - executive overview"
+                    loading="lazy"
+                    class="clickable-image"
+                    onclick="openImageModal(this)"
+                  />
+                  <div class="dashboard-preview-label"><strong>Power BI</strong><br />Executive overview</div>
+                </div>
+                <div class="dashboard-preview-item">
+                  <img
+                    src="assets/images/airline-tableau.jpeg"
+                    alt="Tableau airline operations dashboard - operational detail"
+                    loading="lazy"
+                    class="clickable-image"
+                    onclick="openImageModal(this)"
+                  />
+                  <div class="dashboard-preview-label"><strong>Tableau</strong><br />Operational detail</div>
+                </div>
               </div>
 
               <div class="tablet-actions">
@@ -437,80 +504,70 @@
               </div>
             </article>
 
-            <article class="project-tablet" aria-label="Bank Marketing ML Model project">
-              <div class="tablet-top">
-                <h3 class="tablet-title">Bank Marketing ML Model</h3>
-                <div class="tablet-pill tablet-pill--ml">ML</div>
-              </div>
-
-              <div class="tablet-block">
-                <h4 class="tablet-h">Problem</h4>
-                <p class="tablet-p">Predict customer subscription behavior to improve targeting and campaign efficiency.</p>
-              </div>
-
-              <div class="tablet-block">
-                <h4 class="tablet-h">Solution</h4>
-                <ul class="tablet-list">
-                  <li>Prepared pipelines for cleaning, preprocessing, and feature preparation.</li>
-                  <li>Trained and evaluated classification models with validated metrics.</li>
-                </ul>
-              </div>
-
-              <div class="tablet-block">
-                <h4 class="tablet-h">Impact</h4>
-                <p class="tablet-p">
-                  Achieved <strong>[X]</strong> baseline score and reduced manual segmentation effort by <strong>[Y]%</strong>.
-                </p>
-              </div>
-
-              <h4 class="project-subtitle">Tech Stack</h4>
-              <div class="skills-tags">
-                <span>Python</span>
-                <span>pandas</span>
-                <span>scikit-learn</span>
-              </div>
-
-              <div class="tablet-actions">
-                <a
-                  class="btn-link"
-                  href="https://github.com/jayavardhan22/Machine-Learning-Project_Bank_Marketing/blob/main/Bank_marketing_deposit.ipynb"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
-              </div>
-            </article>
-
+            <!-- PROJECT 3: Traffic Collision Data Quality -->
             <article class="project-tablet" aria-label="Traffic Collision Data Quality project">
+              <div class="project-badge project-badge--3">Project 3</div>
+
               <div class="tablet-top">
                 <h3 class="tablet-title">Traffic Collision Data Quality</h3>
                 <div class="tablet-pill tablet-pill--dq">Data Quality</div>
               </div>
 
               <div class="tablet-block">
-                <h4 class="tablet-h">Problem</h4>
-                <p class="tablet-p">Large datasets had missing and inconsistent fields impacting analytics reliability.</p>
+                <h4 class="tablet-h">Business Challenge</h4>
+                <p class="tablet-p">Large public traffic datasets had 35% missing fields and logical inconsistencies, preventing reliable analytics and ML model training.</p>
               </div>
 
               <div class="tablet-block">
-                <h4 class="tablet-h">Solution</h4>
+                <h4 class="tablet-h">Solution Delivered</h4>
                 <ul class="tablet-list">
-                  <li>Analyzed anomalies and missingness patterns to identify quality gaps.</li>
-                  <li>Implemented rules + ML signals to score reliability and validate records.</li>
+                  <li><strong>Hybrid ML framework:</strong> Isolation Forest, LOF, and DBSCAN anomaly detection</li>
+                  <li><strong>Rule-based validation:</strong> Deterministic checks for auditable results</li>
+                  <li><strong>Automated flagging:</strong> Transparent issue identification with explainable logic</li>
                 </ul>
               </div>
 
               <div class="tablet-block">
-                <h4 class="tablet-h">Impact</h4>
-                <p class="tablet-p">Improved validation coverage to <strong>[X]%</strong> and reduced bad records by <strong>[Y]%</strong>.</p>
+                <h4 class="tablet-h">Real-World Impact</h4>
+                <p class="tablet-p"><strong>Validation coverage: 92%</strong> | <strong>28% anomalies detected</strong> | <strong>88.5% precision on edge cases</strong> | <strong>Production-ready framework</strong></p>
               </div>
 
               <h4 class="project-subtitle">Tech Stack</h4>
               <div class="skills-tags">
                 <span>Python</span>
+                <span>Scikit-learn</span>
+                <span>Pandas</span>
+                <span>Streamlit</span>
                 <span>SQL</span>
-                <span>Machine Learning</span>
+              </div>
+
+              <h4 class="project-subtitle">Video Preview</h4>
+              <div class="media-card">
+                <div class="video-container">
+                  <video
+                    class="js-autoplay-video"
+                    id="project3-video"
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                  >
+                    <source src="assets/images/traffic-screen-recording.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="video-controls">
+                    <button type="button" class="video-play-btn" onclick="toggleVideoPlayback(event)" aria-label="Play/pause video">
+                      <span class="play-icon">▶</span>
+                    </button>
+                    <div class="video-progress">
+                      <div class="progress-bar"></div>
+                    </div>
+                    <span class="video-time"><span class="current-time">0:00</span> / <span class="duration">0:00</span></span>
+                  </div>
+                </div>
+                <div class="media-card-label">
+                  <strong>Project Demo</strong>
+                </div>
               </div>
 
               <div class="tablet-actions">
@@ -529,11 +586,11 @@
           <h2 class="section-title">Awards & Achievements</h2>
           <div class="award-grid" aria-label="Awards">
             <div class="award-card">
-              <h4>Rookie-Rockstar</h4>
+              <h4>🏆 Rookie-Rockstar</h4>
               <p>Awarded for delivering critical MVNO projects ahead of schedule.</p>
             </div>
             <div class="award-card">
-              <h4>Employee of the Month</h4>
+              <h4>⭐ Employee of the Month</h4>
               <p>Awarded for high-impact delivery and consistent execution in client work.</p>
             </div>
           </div>
@@ -545,6 +602,7 @@
         <div class="section">
           <div class="section-head">
             <h2>Contact</h2>
+            <p class="section-subhead">Open to internship and full-time opportunities in Data Engineering / Analytics Engineering.</p>
           </div>
 
           <div class="contact-grid" aria-label="Contact methods">
@@ -606,21 +664,6 @@
             </a>
 
             <a
-              class="contact-tile"
-              href="https://www.instagram.com/jayavardhan__p/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Open Instagram"
-            >
-              <div class="tile-icon" aria-hidden="true">◎</div>
-              <div class="tile-content">
-                <div class="tile-title">Instagram</div>
-                <div class="tile-value">@jayavardhan__p</div>
-              </div>
-              <div class="tile-cta" aria-hidden="true">Open</div>
-            </a>
-
-            <a
               class="contact-tile contact-tile--resume"
               href="resume/Jayavardhan-Premnath-Resume.pdf"
               target="_blank"
@@ -640,25 +683,33 @@
       </section>
     </main>
 
+    <!-- IMAGE MODAL -->
+    <div class="image-modal" id="imageModal" role="dialog" aria-modal="true" aria-label="Image preview">
+      <div class="image-modal-content">
+        <button class="image-modal-close" type="button" onclick="closeImageModal()" aria-label="Close image">×</button>
+        <img id="modalImage" src="" alt="Image preview" />
+      </div>
+    </div>
+
     <footer class="site-footer" aria-label="Footer links">
       <div class="footer-inner">
-        <span class="footer-label">Quick Links:</span>
+        <span class="footer-label">👤 Connect:</span>
         <a href="mailto:jayavardhanp2204@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/jayavardhan-premnath-a7293b237/" target="_blank" rel="noopener noreferrer">
           LinkedIn
         </a>
         <a href="https://github.com/jayavardhan22" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span style="opacity: 0.5;">|</span>
+        <span class="footer-label">📄 Docs:</span>
         <a href="resume/Jayavardhan-Premnath-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
       </div>
     </footer>
 
-    <!-- NAVIGATION ARROWS -->
     <div class="nav-arrows" aria-label="Page navigation arrows">
       <button type="button" class="arrow" id="prevBtn" aria-label="Previous Page">❮</button>
       <button type="button" class="arrow" id="nextBtn" aria-label="Next Page">❯</button>
     </div>
 
-    <!-- PAGE INDICATORS -->
     <div class="page-indicator" aria-label="Page indicators">
       <button type="button" class="dot-page active" data-page="0" aria-label="Page 1"></button>
       <button type="button" class="dot-page" data-page="1" aria-label="Page 2"></button>
@@ -667,6 +718,79 @@
     </div>
 
     <script>
+      // ===== IMAGE MODAL FUNCTIONS =====
+      function openImageModal(imgElement) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        modalImg.src = imgElement.src;
+        modalImg.alt = imgElement.alt || "Image preview";
+        modal.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeImageModal() {
+        const modal = document.getElementById("imageModal");
+        modal.classList.remove("active");
+        document.body.style.overflow = "auto";
+      }
+
+      document.getElementById("imageModal").addEventListener("click", function (e) {
+        if (e.target === this) closeImageModal();
+      });
+
+      // ===== VIDEO PLAYBACK FUNCTIONS =====
+      function toggleVideoPlayback(event) {
+        event.preventDefault();
+        const video = document.getElementById("project3-video");
+        const playBtn = event.target.closest(".video-play-btn");
+        
+        if (video.paused) {
+          video.play().catch(err => console.warn("Play failed:", err));
+          playBtn.querySelector(".play-icon").textContent = "⏸";
+        } else {
+          video.pause();
+          playBtn.querySelector(".play-icon").textContent = "▶";
+        }
+      }
+
+      function formatTime(seconds) {
+        if (!seconds || isNaN(seconds)) return "0:00";
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${mins}:${secs < 10 ? "0" : ""}${secs}`;
+      }
+
+      function updateVideoTime() {
+        const video = document.getElementById("project3-video");
+        const currentTimeEl = document.querySelector(".current-time");
+        const durationEl = document.querySelector(".duration");
+        const progressBar = document.querySelector(".progress-bar");
+        
+        if (currentTimeEl) currentTimeEl.textContent = formatTime(video.currentTime);
+        if (durationEl && video.duration) durationEl.textContent = formatTime(video.duration);
+        
+        if (progressBar && video.duration) {
+          const percent = (video.currentTime / video.duration) * 100;
+          progressBar.style.width = percent + "%";
+        }
+      }
+
+      // ===== VIDEO EVENT LISTENERS =====
+      document.addEventListener("DOMContentLoaded", () => {
+        const video = document.getElementById("project3-video");
+        
+        if (video) {
+          video.addEventListener("timeupdate", updateVideoTime);
+          video.addEventListener("loadedmetadata", () => {
+            document.querySelector(".duration").textContent = formatTime(video.duration);
+          });
+          video.addEventListener("ended", () => {
+            document.querySelector(".play-icon").textContent = "▶";
+          });
+        }
+      });
+
+      // ===== PAGE NAVIGATION =====
       document.addEventListener("DOMContentLoaded", () => {
         let currentPage = 0;
 
@@ -676,10 +800,13 @@
         const prevBtn = document.getElementById("prevBtn");
         const nextBtn = document.getElementById("nextBtn");
 
+        const urlParams = new URLSearchParams(window.location.search);
+        const fromParam = urlParams.get("from");
+        if (fromParam === "projects") currentPage = 2;
+
         const updateArrowVisibility = () => {
           prevBtn.classList.toggle("is-hidden", currentPage === 0);
           nextBtn.classList.toggle("is-hidden", currentPage === pages.length - 1);
-
           prevBtn.setAttribute("aria-disabled", String(currentPage === 0));
           nextBtn.setAttribute("aria-disabled", String(currentPage === pages.length - 1));
         };
@@ -689,7 +816,6 @@
             const isActive = i === activeIndex;
             page.classList.toggle("active", isActive);
             page.toggleAttribute("aria-hidden", !isActive);
-
             if (!isActive) page.setAttribute("inert", "");
             else page.removeAttribute("inert");
           });
@@ -710,15 +836,6 @@
         const showPage = (index) => {
           if (index < 0 || index >= pages.length) return;
           setPageState(index);
-
-          window.setTimeout(() => {
-            const heading = pages[index].querySelector("h1, h2, h3");
-            if (heading) {
-              heading.setAttribute("tabindex", "-1");
-              heading.focus({ preventScroll: true });
-              heading.addEventListener("blur", () => heading.removeAttribute("tabindex"), { once: true });
-            }
-          }, 50);
         };
 
         navButtons.forEach((btn) => btn.addEventListener("click", () => showPage(Number(btn.dataset.page))));
@@ -737,7 +854,6 @@
           const isFormField = ["input", "textarea", "select"].includes(tag);
           if (isFormField) return;
           if (e.altKey || e.ctrlKey || e.metaKey) return;
-
           if (e.key === "ArrowRight") nextBtn.click();
           if (e.key === "ArrowLeft") prevBtn.click();
         });
@@ -747,11 +863,9 @@
         const openAccordion = (toggleBtn, content) => {
           content.hidden = false;
           content.classList.add("show");
-
           content.style.maxHeight = content.scrollHeight + "px";
           content.style.paddingTop = "20px";
           content.style.paddingBottom = "20px";
-
           toggleBtn.setAttribute("aria-expanded", "true");
           const icon = toggleBtn.querySelector(".expand-icon");
           if (icon) icon.textContent = "−";
@@ -762,29 +876,31 @@
           content.style.maxHeight = "0px";
           content.style.paddingTop = "0px";
           content.style.paddingBottom = "0px";
-
           toggleBtn.setAttribute("aria-expanded", "false");
           const icon = toggleBtn.querySelector(".expand-icon");
           if (icon) icon.textContent = "+";
-
-          window.setTimeout(() => {
-            content.hidden = true;
-          }, 350);
+          window.setTimeout(() => (content.hidden = true), 250);
         };
 
-        const onToggle = (toggleBtn) => {
-          const targetId = toggleBtn.getAttribute("data-target");
-          const content = document.getElementById(targetId);
-          if (!content) return;
+        toggles.forEach((toggleBtn) => {
+          toggleBtn.addEventListener("click", () => {
+            const targetId = toggleBtn.getAttribute("data-target");
+            const content = document.getElementById(targetId);
+            if (!content) return;
+            const isOpen = toggleBtn.getAttribute("aria-expanded") === "true";
+            if (isOpen) closeAccordion(toggleBtn, content);
+            else openAccordion(toggleBtn, content);
+          });
+        });
 
-          const isOpen = toggleBtn.getAttribute("aria-expanded") === "true";
-          if (isOpen) closeAccordion(toggleBtn, content);
-          else openAccordion(toggleBtn, content);
-        };
+        showPage(currentPage);
+      });
 
-        toggles.forEach((btn) => btn.addEventListener("click", () => onToggle(btn)));
-
-        showPage(0);
+      // Close modals on Escape
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeImageModal();
+        }
       });
     </script>
   </body>
