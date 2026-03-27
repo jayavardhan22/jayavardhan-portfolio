@@ -183,10 +183,10 @@
 
           <div class="case-study-highlight" style="margin-top: 24px;">
             <p>
-              <strong>Automation Architecture:</strong> GitHub Actions continuous integration service triggers the automated pipeline daily at 2:00 AM Coordinated Universal Time. The Python Extract-Transform-Load script extracts repository data from the GitHub Application Programming Interface, applies comprehensive data quality validation, transforms raw information into 35+ calculated metrics, and upserts the complete dataset to BigQuery. This approach requires zero manual intervention and maintains a rolling 12-month historical record for trend analysis.
+              <strong>Automation Architecture:</strong> A GitHub Actions pipeline runs daily at 2:00 AM UTC to extract, clean, and transform GitHub data into 35+ metrics, updating BigQuery automatically with a 12-month history.
             </p>
             <p style="margin-top: 12px;">
-              <strong>Development Environment and Tools:</strong> Python 3.10 or higher programming language, PyGithub library for GitHub Application Programming Interface access, pandas for data transformation and manipulation, and google-cloud-bigquery client library for cloud data warehouse integration. Authentication tokens are securely stored in GitHub Secrets encrypted storage. The system operates with read-only access permissions and enforces rate limiting at 5,000 requests per hour to prevent Application Programming Interface throttling.
+              <strong>Development Environment and Tools:</strong> Built using Python (3.10+), PyGithub, pandas, and Google BigQuery. Authentication is securely managed with GitHub Secrets, with read-only access and API rate limits in place to ensure stability.
             </p>
           </div>
 
