@@ -1810,10 +1810,10 @@
     pointer-events: none;
   }
   
-  /* ============================================================================
-     PAGE INDICATOR (DOTS) - OPTIMIZED FOR MOBILE
-     ============================================================================ */
-  .page-indicator {
+/* ============================================================================
+   PAGE INDICATOR (DOTS) - OPTIMIZED FOR ALL DEVICES
+   ============================================================================ */
+   .page-indicator {
     position: fixed;
     bottom: 56px;
     left: 50%;
@@ -1821,7 +1821,7 @@
     display: flex;
     gap: 8px;
     z-index: 110;
-    padding: 8px 12px;
+    padding: 6px 10px;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 999px;
     backdrop-filter: blur(8px);
@@ -1847,6 +1847,72 @@
   .dot-page.active {
     background: var(--accent);
     box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  }
+  
+  /* ============================================================================
+     RESPONSIVE - TABLET PAGE INDICATOR (601px - 900px)
+     ============================================================================ */
+  @media (max-width: 900px) and (min-width: 601px) {
+    .page-indicator {
+      bottom: 60px;
+      gap: 7px;
+      padding: 7px 11px;
+      background: rgba(0, 0, 0, 0.28);
+    }
+  
+    .dot-page {
+      width: 9px;
+      height: 9px;
+      background: rgba(71, 85, 105, 0.55);
+    }
+  
+    .dot-page.active {
+      background: rgba(59, 130, 246, 0.85);
+    }
+  }
+  
+  /* ============================================================================
+     RESPONSIVE - MOBILE PAGE INDICATOR (320px - 600px)
+     ============================================================================ */
+  @media (max-width: 600px) {
+    .page-indicator {
+      bottom: 72px;
+      gap: 5px;
+      padding: 5px 8px;
+      background: rgba(0, 0, 0, 0.2);
+    }
+  
+    .dot-page {
+      width: 7px;
+      height: 7px;
+      background: rgba(71, 85, 105, 0.5);
+    }
+  
+    .dot-page:hover {
+      background: rgba(96, 165, 250, 0.7);
+      transform: scale(1.2);
+    }
+  
+    .dot-page.active {
+      background: rgba(59, 130, 246, 0.95);
+      box-shadow: 0 0 6px rgba(59, 130, 246, 0.4);
+    }
+  }
+  
+  /* ============================================================================
+     LANDSCAPE MODE - PAGE INDICATOR
+     ============================================================================ */
+  @media (max-height: 500px) and (orientation: landscape) {
+    .page-indicator {
+      bottom: 48px;
+      gap: 4px;
+      padding: 4px 6px;
+    }
+  
+    .dot-page {
+      width: 6px;
+      height: 6px;
+    }
   }
   
   /* ============================================================================
